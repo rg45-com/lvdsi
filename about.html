@@ -1,0 +1,79 @@
+---
+layout: page
+title: About
+page_name: about
+images: 
+  - image_path: /assets/img/pics/pic-01.jpg
+    title: image-1
+  - image_path: /assets/img/pics/pic-02.jpg
+    title: image-2
+  - image_path: /assets/img/pics/pic-03.jpg
+    title: image-3
+  - image_path: /assets/img/pics/pic-04.jpg
+    title: image-4
+  - image_path: /assets/img/pics/pic-05.jpg
+    title: image-5
+  - image_path: /assets/img/pics/pic-06.jpg
+    title: image-6
+  - image_path: /assets/img/pics/pic-07.jpg
+    title: image-7
+  - image_path: /assets/img/pics/pic-08.jpg
+    title: image-8
+  - image_path: /assets/img/pics/pic-09.jpg
+    title: image-9
+  - image_path: /assets/img/pics/pic-10.jpg
+    title: image-10
+  - image_path: /assets/img/pics/pic-11.jpg
+    title: image-11
+  - image_path: /assets/img/pics/pic-12.jpg
+    title: image-12
+  - image_path: /assets/img/pics/pic-13.jpg
+    title: image-13
+  - image_path: /assets/img/pics/pic-14.jpg
+    title: image-14
+  - image_path: /assets/img/pics/pic-15.jpg
+    title: image-15
+  - image_path: /assets/img/pics/pic-16.jpg
+    title: image-16
+  - image_path: /assets/img/pics/pic-17.jpg
+    title: image-17
+  - image_path: /assets/img/pics/pic-18.jpg
+    title: image-18
+  - image_path: /assets/img/pics/pic-19.jpg
+    title: image-19
+  - image_path: /assets/img/pics/pic-20.jpg
+    title: image-20
+  - image_path: /assets/img/pics/pic-21.jpg
+    title: image-21
+  - image_path: /assets/img/pics/pic-22.jpg
+    title: image-22
+  - image_path: /assets/img/pics/dalcroze-kids-small.jpg
+    title: image-23
+    
+    
+    
+---
+<div class="container">
+  <div class="slogan"> 
+    <h1>About Las Vegas Desert Suzuki Institute</h1>
+  </div>
+  <p class="text-center"><span class="firstletter">T</span>he Board of Directors of the Las Vegas Desert Suzuki Institute is pleased to offer our summer program of exceptional musical classes, enrichments and performance opportunities in beautiful Temple Sinai in Summerlin.  For those who wish to support students in need of financial assistance, our non-profit status affords you to make a monetary donation and enjoy both the personal tax benefit as well as the satisfaction of knowing you enhanced a child's musical life.</p>
+  {% include donate-btn.html %}
+</div>
+
+<div class="album py-2">
+  
+  <div class="container">
+    <h2>Pics from past music camps</h2>
+     <div class="row">
+        {% for image in page.images %}
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <a href="{{ image.image_path }}" data-lightbox="gallery-set"><img src="{{ image.image_path }}" alt="{{ image.title }}" class="img-thumbnail" /></a>
+          </div>
+        </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+  </div>

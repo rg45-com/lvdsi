@@ -1,0 +1,380 @@
+/* CSS Document */
+
+html {
+  overflow-y: scroll;
+}
+
+body, html {
+	background-color: #202020; /* 2B0F02 */
+	margin: 0px;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+/* previous bright orange text color: 6F93B4 */
+/* unvisited link */
+a:link {
+    color: #6F93B4;
+}
+
+/* visited link */
+a:visited {
+    color: #6F93B4;
+}
+
+/* mouse over link */
+a:hover {
+    color: #467096;
+}
+a.btn-donate  {
+  background: #035737;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 2em;
+}
+.btn-donate:hover {
+    background-color: #14724E;
+}
+a.btn-outline-secondary {
+  color: #6c757d;
+}
+.navbar {
+  background: #093054;
+}
+.nav-item {
+  padding: 0px 10px;
+}
+.nav-item a, .dropdown-menu {
+    background: #093054;
+    color: #6f93b4;
+}
+.firstletter {
+	float: left;
+	font-size: 2.40em;
+	line-height: 1;
+	margin: 0.00em 0.08em 0 0;
+	color: #6F93B4;
+}
+.slogan {
+	text-align:center;
+	color: #6F93B4;
+	font-size:1.3em;
+}
+.dark_text {
+	color: #000000;
+}
+.NewsHeadline {
+		color: #6F93B4;
+		font-size:1.2em;
+}.NewsTitle {
+		color: #00B5A3;
+		font-size:1.5em;
+}
+
+#DonateBox {
+	height:25px;
+	width:100%;
+	background-color:;
+	position:absolute;
+	bottom:0px; 
+}
+.RegisterButton:link {
+	color:#ffffff;
+}
+.RegisterButton:active {
+	color:#ffffff;
+}
+.RegisterButton:visited {
+	color:#ffffff;
+}
+.RegisterButton:hover {
+	color:#00B5A3;
+}
+.RegisterButton  {
+  background: #6F93B4;
+  -webkit-border-radius: 2;
+  -moz-border-radius: 2;
+  border-radius: 2px;
+  border-width:0px;
+  font-family: Arial;
+  font-size: .8em;
+  padding: 2px 4px 2px 4px;
+  text-decoration: none;
+  margin-left:10px;
+}
+#MainBox {
+	width: 100%;
+	height: 100%;
+ background-color: #;
+	margin: 0 auto;
+ overflow:;
+}
+#HeaderBox {
+	width: 730px;
+	margin: 0 auto;
+	position: relative;
+ background: #;
+}
+#HeaderBoxMain {
+	width: 878px;
+	margin: 0 auto;
+	position: relative;
+ background-color:  #;
+}
+#Bass {
+	width: 84px;
+	height: 150px;
+ background: #;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+}
+#Treble {
+	width: 64px;
+	height: 168px;
+	position: absolute;
+	top: 10px;
+	right: 23px;
+}
+#LVDSTitle {
+	color: #FFF;
+	margin: 0 auto;
+	width: 700px;
+	height: 119px;
+	font-size: 36px;
+	padding-top: 20px;
+}
+#MenuBox {
+	height: 36px;
+	width: 740px;
+	 background:#;
+ 	left: -5px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 1;
+}
+.IndexText {
+	margin: 0 auto;
+	text-align: justify;
+	color: #ffffff;
+	font-size: 1.3em;
+	padding-top: 20px;
+	width: 800px;
+}
+.IndexText H1 {
+	color: #8A2C00;
+	font-size: 17px;
+}
+.IndexText h6 {
+	color: #6F93B4;
+	font-size: 1.5em;
+	line-height: .1;
+}
+.AccTitle {
+	color: #6F93B4;
+}
+#ContactBox {
+	width:400px;
+	margin: 0 auto;
+	padding-top:40px;
+}
+#blargh {
+  background: #2b0f02; /* Old browsers */
+  background: linear-gradient(to right, #2b0f02 0%,#8a2c00 15%,#8a2c00 50%,#8a2c00 85%,#2b0f02 100%);
+	height: 2px;
+	margin: 0 auto;
+}
+.MenuItem {
+	font-family: "Helvetica Neue";
+	font-size: 24px;
+	color: #fff;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#LogoBox {
+	height: 55px;
+	width: 352px;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+#SliderBox {
+	height: calc(100% - 120px);
+	width: 98%;
+	margin: 0 auto;
+}
+#SliderBox img {
+	margin: 0 auto;
+	display: block;
+}
+.sliderImg {
+}
+.sliderImg img {
+	max-height: 80%;
+	margin: 0 auto;
+	display: block;
+}
+#SliderBox2 {
+	height: calc(100% - 150px);
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+#SliderBox2 img {
+	max-height: 100%;
+	margin: 0 auto;
+	display: block;
+}
+.aboutBox {
+	font-family: "Helvetica";
+	color: white;
+	width: 800px;
+	height: auto;
+	background-color: #222222;
+	padding: 15px;
+	padding-top: 5px;
+	margin: 0 auto;
+	margin-top: 20px;
+	line-height: 1.5;
+}
+.aboutBox {
+}
+.aboutBox H3 {
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+.aboutText {
+	float: left;
+	margin-top: 0px;
+}
+.aboutBox img {
+}
+#PicBox {
+	width:800px;
+	margin: 0 auto;
+	background-color:;
+	padding-top:20px;
+}
+.PicBoxGrid {
+	width:100px;
+	height:100px;
+	padding:7px;
+	margin:0px;
+	background-color;
+	float: left;
+	top:50%
+	transform:translateY(-50%);
+} 
+.contactBox {
+	font-family: "Helvetica";
+	color: white;
+	width: 400px;
+	height: auto;
+	background-color: #222222;
+	padding: 15px;
+	padding-top: 5px;
+	margin: 0 auto;
+	margin-top: 20px;
+	line-height: 1.5;
+	text-align: center;
+}
+.contactBox H3 {
+	font-size: 16px;
+	color: white;
+	text-align: center;
+}
+.contactBox H1 {
+	font-weight: normal;
+	font-size: 28px;
+}
+.contactBox img {
+	padding-right: 12px;
+}
+.contactBox a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+}
+.contactBox a:hover {
+	color: #5074fc;
+}
+.photoCopy {
+	font-family: "Times New Roman", Times, serif;
+	position: absolute;
+	line-height: 24px;
+	font-size: 5px;
+	background: black;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.75);
+	padding: 0px 10px;
+	position: absolute;
+	left: 12px;
+	bottom: 12px;
+	top: auto;
+	border-radius: 2px;
+	z-index: 225;
+}
+.photoCopy a {
+	color: #FFF;
+}
+@font-face {
+	font-family: 'NeueL';
+	src: url("../fonts/HelveticaNeueLTPro-Md.otf");
+}
+.HNeueL {
+	font-family: 'NeueL';
+}
+@font-face {
+	font-family: 'NeueLTh';
+	src: url("../fonts/HelveticaNeueLTPro-Th.otf");
+}
+.HNeueTh {
+	font-family: 'NeueLTh';
+}
+@font-face {
+	font-family: 'HelvRegular';
+	src: url("../fonts/helvetica-regular.otf");
+}
+.HelvReg {
+	font-family: 'HelvRegular'
+}
+.contactText {
+	font-size:1.2em;
+	height:40px;
+	margin-left:30px;
+}
+.IndexText .btn strong {
+	color: #00B5A3;
+}
+.Indent {
+	left:10px;
+}
+.fb-container {
+		height: 400px;
+		min-height: 400px;
+	}
+.program-card .card {
+  min-width: 250px;
+}
+.program-card .card-header {
+  background-color: #e7b062;
+  color: #814e05;
+}
+.program-card .btn-outline-secondary {
+    color: #e7b062;
+    background-color: transparent;
+    background-image: none;
+    border-color: #e7b062;
+}
+.program-card .btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+/*
+.program-card .card-body {
+  background: #814e05;
+  color: #ffd496;
+}
+*/
