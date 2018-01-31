@@ -1,18 +1,41 @@
 ---
 layout: page
-title: Piano Camp
+title: Piano Program
 page_name: piano
 ---
-<div class="container">
+<div class="container clearfix">
   <div class="slogan"> 
-    <h1>2018 Piano Camp</h1>
+    <h1>{{ page.title }}</h1>
   </div>
-  <div class="row">
-    {% include donate-box-1.html %}
-    
-    <div class="col-lg-8 order-lg-first">  
-      <p class="lead">Waiting for copy/paste-able text.</p>
-      
-      
+  <div class="card-deck mb-3 text-center program-card float-md-right ml-auto p-2">
+   <div class="card mb-4 box-shadow bg-dark">
+      <div class="card-header">
+        <h3 class="my-0 font-weight-normal">Piano Program</h3>
+      </div>
+      <div class="card-body ">
+        <h3 class="card-title pricing-card-title">$350 <small> Tuition + Registration fee</small></h3>
+        <a href="{{ site.flute_reg_url }}" class="btn btn-lg btn-block btn-outline-secondary">Register</a>
+      </div>
     </div>
+  </div>
+    
+  <p>All Piano Students will receive 6 classes each day. Classes include:</p>
+  <ul>
+    <li>Masterclass (semi-private lesson)</li>
+    <li>Piano Ensemble Class</li>
+    <li>Suzuki Piano Repertoire Class</li>
+    <li>Piano Technique (Books 1&2) -or- Accompanying (Books 3+)</li>
+    <li>Performance Workshop</li>
+    <li>Enrichment Class (of student's choosing)</li>
+  </ul>
+
+  <p>Classes will be divided by playing level and ensemble music will be sent ahead of time. Suzuki Piano Book 1 students may not have ensemble music to learn ahead of time. All piano ensemble classes and the Suzuki Piano Repertoire Class will perform on the Final Concert on Thursday night.</p>
+  
+  <p>All piano students are invited to audition for our Honors Recital, winners performing Tuesday afternoon, and the Sonata Competition, winners performing Wednesday afternoon. For specific audition information, please see our Honors Recital and Sonata Competition page.</p>
+  
+  <p>Non-Suzuki trained students are welcome to participate in our piano camp! Suzuki Piano Repertoire Class  is the only Suzuki-specific class, and the repertoire will be sent ahead of time. Come and join us for an inspiring and invaluable workshop that will propel your skills into the next school season!</p>
+  
+  <p>Enrollment Fee: $350 plus a non-refundable Registration Fee </p>
+  
 </div>
+{% include donate-box-2.html %}

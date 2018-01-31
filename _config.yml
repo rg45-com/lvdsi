@@ -13,15 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Las Vegas Desert Suzuki
+title: Las Vegas Suzuki Music
 email: lvdesertsuzuki@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  LV Desert Suzuki music camp. We welcome all students of Flute, Piano, Violin and Viola as well as teachers seeking to obtain Suzuki book registration.
+  Las Vegas Suzuki music workshop. We welcome all students of Flute, Piano, Violin and Viola as well as teachers seeking to obtain Suzuki book registration.
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.lvdesertsuzuki.com" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 google_analytics: "set me"
+flute_reg_url: "/registration/flute.html"
+piano_reg_url: "/registration/piano.html"
+intro_reg_url: "/registration/intro.html"
 
 # Build settings
 markdown: kramdown

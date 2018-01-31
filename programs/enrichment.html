@@ -3,16 +3,39 @@ layout: page
 title: Music Enrichment Classes
 page_name: enrichment
 ---
-<div class="container">
+<div class="container clearfix">
   <div class="slogan"> 
-    <h1>2018 Music Enrichment Classes</h1>
+    <h1>{{ page.title }}</h1>
   </div>
-  <div class="row">
-    {% include donate-box-1.html %}
-    
-    <div class="col-lg-8 order-lg-first">  
-      <p class="lead">Waiting for copy/paste-able text.</p>
-      
-      
+  <div class="card-deck mb-3 text-center program-card float-md-right ml-auto p-2">
+   <div class="card mb-4 box-shadow bg-dark">
+      <div class="card-header">
+        <h3 class="my-0 font-weight-normal">Enrichment Classes</h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Theory Games - Bonnie Buhler-Tanouye*</li>
+          <li>Voice - Wendy Osborne</li>
+          <li>Theory Games - Nancy Toone*</li>
+          <li>Percussion Ensemble - Sean Tyler</li>
+        </ul>
+        <a href="#" class="btn btn-lg btn-block btn-outline-secondary">Register</a>
+      </div>
     </div>
+  </div>
+    
+  <p class="lead">Enrichment Classes are a great way to explore music in a new way!</p>
+  <p>All students in our Flute or Piano program will select an Enrichment Class as part of their program. First Choice selections are not guaranteed, as classes are filled based on time of enrollment, class availability, and individual schedules.
+  Siblings and Friends are welcome to register for Enrichment Classes also! (additional fees apply)</p>
+  
+  <h3>Vocal Workshop</h3>
+  <p>This class will focus on learning more about the vocal instrument that we all have, and how to use our voices to improve our instrument studies. This will be fun, upbeat and educational class split by age.</p>
+  
+  <h3>Theory Games</h3>
+  <p>Does music theory feel boring or overwhelming? This class will help break down the biggest concepts in music theory by using fun games and twisting and flipping music theory around like you have never seen! Classes will be split by age and experience.</p>
+  
+  <h3>Percussion Ensemble</h3>
+  <p>This class will focus on developing rhythmic understanding through the use of different types of percussion instruments. Students will be reading written rhythms, and may even help to compose some percussion ensemble music! Percussion Ensemble students will perform on the Final Concert on Thursday night.</p>
+
 </div>
+{% include donate-box-2.html %}

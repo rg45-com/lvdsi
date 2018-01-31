@@ -3,16 +3,31 @@ layout: page
 title: Intro to Music Camp
 page_name: introcamp
 ---
-<div class="container">
+<div class="container clearfix">
   <div class="slogan"> 
-    <h1>2018 Intro to Music Camp</h1>
+    <h1>{{ page.title }}</h1>
   </div>
-  <div class="row">
-    {% include donate-box-1.html %}
-    
-    <div class="col-lg-8 order-lg-first">  
-      <p class="lead">Waiting for copy/paste-able text.</p>
-      
-      
+  <div class="card-deck mb-3 text-center program-card float-md-right ml-auto p-2">
+   <div class="card mb-4 box-shadow bg-dark">
+      <div class="card-header">
+        <h3 class="my-0 font-weight-normal">Intro to Music</h3>
+      </div>
+      <div class="card-body ">
+        <h3 class="card-title pricing-card-title">$75 <small> Tuition + Registration fee</small></h3>
+        <a href="{{ site.intro_reg_url }}" class="btn btn-lg btn-block btn-outline-secondary">Register</a>
+      </div>
     </div>
+  </div>
+    
+  <p>Our Intro to Music Camp is a half-day camp for children ages 3-6 who have either not yet begun formal music training or who have only been studying for a short time. Children attend each day 9:00-12:00 and receive a General Music Class, a Carnival of the Animals (Introduction to the Instruments) Class, and a Vocal Explorations Class.</p>
+  <p><strong>Please Note:</strong> a parent or guardian is required to attend with each child.</p>
+  <p>Intro to Music Classes will perform on Thursday afternoon at 12:45 immediately following lunch.<p>
+
+  <p>Each class is limited to 8 children, and a minimum enrollment must be reached by June 1st to guarantee the classes.<br/>
+     <strong>Ages 3-4:</strong> Bitty Beethovens<br/>
+     <strong>Ages 5-6:</strong> Mighty Mozarts</p>
+
+   <p>Enrollment Fee: $75 plus a non-refundable Registration Fee</p>
+  
 </div>
+{% include donate-box-2.html %}
