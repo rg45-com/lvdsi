@@ -22,8 +22,8 @@ url: "http://www.lvdesertsuzuki.com" # the base hostname & protocol for your sit
 #twitter_username: jekyllrb
 #github_username:  jekyll
 google_analytics: "set me"
-flute_reg_url: "/registration/flute.html"
-piano_reg_url: "/registration/piano.html"
+flute_reg_url: "/registration/flute-piano.html"
+piano_reg_url: "/registration/flute-piano.html"
 intro_reg_url: "/registration/intro.html"
 
 # Build settings

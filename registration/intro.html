@@ -1,0 +1,143 @@
+---
+layout: page
+title: 2018 Intro to Music Registration
+page_name: reg-intro
+---
+<div class="container">
+  <div class="slogan"> 
+    <h1>{{ page.title }}</h1>
+  </div>
+
+  <p><span class="firstletter">I</span>ntro to Music Registration form.  Please complete this form to register.  Once you register, the next step is to submit payment.</p>
+
+  <div class="container mb-3">
+    <form class="needs-validation" novalidate>
+      
+      <div class="form-group border rounded border-dark p-3">
+        <h3 class="slogan text-left">Student Info</h3>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="studentLast">Student Last Name</label>
+            <input type="text" class="form-control" id="studentLast" placeholder="Last name" required>
+            <div class="invalid-feedback">
+              Please provide the Student's Last name.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="studentFirst">Student First Name</label>
+            <input type="text" class="form-control" id="studentFirst" placeholder="First name" required>
+            <div class="invalid-feedback">
+                Please provide the Student's First name.
+              </div>
+          </div>
+        </div><!-- /form-row -->
+        
+        <div class="form-row">        
+          <div class="col-md-6 mb-3">
+            <label for="dob">Date of Birth</label>
+            <input type="text" class="form-control" id="dob" placeholder="MM/DD/YYYY" required>
+            <div class="invalid-feedback">
+              Please enter Student's valid date of birth.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="gradeLevel">Grade in School 2017-18:</label>
+            <select class="custom-select" id="gradeLevel">
+              <option value="">Please select a grade</option>
+              <option value="Pre-K">Pre-K</option>
+              <option value="Kinder">Kinder</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+            <div class="invalid-feedback">
+               Please select a grade.
+            </div>
+          </div>
+        </div><!-- /form-row -->
+      </div><!-- /form-group -->
+            
+      <div class="form-group border rounded border-dark p-3">
+        <h3 class="slogan text-left">Parent Info</h3>
+        
+        {% include form-parent-block.html %}
+                
+      </div><!-- /form-group -->
+      
+      <div class="form-group border rounded border-dark p-3">
+        <h3 class="slogan text-left">Program Info</h3>
+        
+        <div class="form-row">        
+          <div class="col-md-6 mb-3">
+            <label for="tShirt1">T-Shirt Size:</label>
+            <select class="custom-select" id="tShirt1" required>
+              {% include form-dropdown-tshirt.html %}
+            </select>
+            <div class="invalid-feedback">
+               Please select a T-Shirt size.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="tShirt2">Extra T-Shirt (optional):</label>
+            <select class="custom-select" id="tShirt2">
+              {% include form-dropdown-tshirt.html %}
+            </select>
+            <div class="invalid-feedback">
+               Please select a T-Shirt size.
+            </div>
+          </div>
+        </div><!-- /form-row -->
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="enrichment">Extra Paid Enrichment Class (optional):</label>
+            <select class="custom-select" id="enrichment">
+              {% include form-dropdown-enrichment.html %}
+            </select>
+            <div class="invalid-feedback">
+               Please select a T-Shirt size.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="accompanying">Name of Accompanying Adult:</label>
+            <input type="text" class="form-control" id="accompanying" placeholder="Name of Accompanying Adult" required>
+          </div>
+        </div><!-- /form-row -->
+        
+      </div><!-- /form-group -->
+      
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      
+      <button class="btn btn-primary" type="submit">Submit Registration</button>
+    </form>
+    
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+  </div>
+{% include donate-box-2.html %}

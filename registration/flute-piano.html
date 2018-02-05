@@ -1,0 +1,451 @@
+---
+layout: page
+title: 2018 Flute &amp; Piano Registration
+page_name: reg-flute-piano
+datepicker: 1
+---
+<div class="container">
+  <div class="slogan"> 
+    <h1>{{ page.title }}</h1>
+  </div>
+
+  <p><span class="firstletter">F</span>lute &amp; Piano Registration form.  Please complete this form to register.  Once you register, the next step is to submit payment.</p>
+
+  <div class="container mb-3">
+    <form class="needs-validation" novalidate>
+      
+      <div class="form-group border rounded border-dark p-3">
+        <h3 class="slogan text-left">Student Info</h3>
+        
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="studentLast">Student Last Name</label>
+            <input type="text" class="form-control" id="studentLast" placeholder="Last name" required>
+            <div class="invalid-feedback">
+              Please provide the Student's Last name.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="studentFirst">Student First Name</label>
+            <input type="text" class="form-control" id="studentFirst" placeholder="First name" required>
+            <div class="invalid-feedback">
+                Please provide the Student's First name.
+              </div>
+          </div>
+        </div><!-- /form-row -->
+        
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="studentEmail">Student Email</label>
+            <input type="text" class="form-control" id="studentEmail" placeholder="Student Email" required>
+            <div class="invalid-feedback">
+              Please provide the Student's email address.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="studentCell">Student Cell Phone</label>
+            <input type="number" class="form-control" id="studentCell" placeholder="Student Cell Phone" required>
+            <div class="invalid-feedback">
+                Please provide the Student's First name.
+              </div>
+          </div>
+        </div><!-- /form-row -->
+        
+        <div class="form-row">        
+          <div class="col-md-6 mb-3">
+            <label for="dob">Date of Birth</label>
+            <input type="text" class="form-control fieldset__input js__datepicker" id="dob" placeholder="YYYY-MM-DD" required>
+            <div class="invalid-feedback">
+              Please enter Student's valid date of birth.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="gradeLevel">Grade in School 2017-18:</label>
+            <select class="custom-select" id="gradeLevel">
+              <option value="">Please select a grade</option>
+              <option value="Pre-K">Pre-K</option>
+              <option value="Kinder">Kinder</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="Adult">Adult</option>
+              
+            </select>
+            <div class="invalid-feedback">
+               Please select a grade.
+            </div>
+          </div>
+        </div><!-- /form-row -->
+      </div><!-- /form-group -->
+            
+      <div class="form-group border rounded border-dark p-3">
+        <h3 class="slogan text-left">Parent Info</h3>
+        
+        {% include form-parent-block.html %}
+                
+      </div><!-- /form-group -->
+      
+      <div class="form-group border rounded border-dark p-3">
+        <h3 class="slogan text-left">Program Info</h3>
+        
+        <div class="form-row">        
+          <div class="col-md-6 mb-3">
+            <label for="program">Program:</label>
+            <select class="custom-select" id="program" required>
+              <option value="">Choose Program</option>
+              <option value="Flute">Flute</option>
+              <option value="Piano">Piano</option>
+            </select>
+            <div class="invalid-feedback">
+               Please select a program.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="homeInstructor">Home Private Studio Instructor</label>
+            <input type="text" class="form-control" id="homeInstructor" placeholder="Home Instructor">
+          </div>
+        </div><!-- /form-row -->
+        
+        <div class="form-row">        
+          <div class="col-md-6 mb-3">
+            <label for="readingLevel">Music Reading Level</label>
+            <select class="custom-select" id="readingLevel" required>
+              <option value="">Music Reading Level</option>
+              <option value="Beginning">Beginning</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+            <div class="invalid-feedback">
+               Please select select your student's music reading level.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="fluteOwned">Flute Students - Do you own</label>
+            <select class="custom-select" id="fluteOwned">
+              <option value="">Do you own?</option>
+              <option value="Piccolo">Piccolo</option>
+              <option value="Alto Flute">Alto Flute</option>
+              <option value="Bass Flute">Bass Flute</option>
+            </select>
+          </div>
+        </div><!-- /form-row -->
+        
+        <div class="form-row">        
+          <div class="col-md-6 mb-3">
+            <label for="tShirt1">T-Shirt Size:</label>
+            <select class="custom-select" id="tShirt1" required>
+              {% include form-dropdown-tshirt.html %}
+            </select>
+            <div class="invalid-feedback">
+               Please select a T-Shirt size.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="tShirt2">Extra T-Shirt (optional):</label>
+            <select class="custom-select" id="tShirt2">
+              {% include form-dropdown-tshirt.html %}
+            </select>
+            <div class="invalid-feedback">
+               Please select a T-Shirt size.
+            </div>
+          </div>
+        </div><!-- /form-row -->
+        
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="enrichment1st">Enrichment Class (1st choice)</label>
+            <select class="custom-select" id="enrichment1st" required>
+              {% include form-dropdown-enrichment.html %}
+            </select>
+            <div class="invalid-feedback">
+               Please select a T-Shirt size.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="enrichment2nd">Enrichment Class (2nd choice)</label>
+            <select class="custom-select" id="enrichment2nd" required>
+              {% include form-dropdown-enrichment.html %}
+            </select>
+            <div class="invalid-feedback">
+               Please select a T-Shirt size.
+            </div>
+          </div>
+        </div><!-- /form-row -->
+        
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="currentPiece">Name of Current Performance Piece</label>
+            <select class="custom-select" id="currentPiece" required>
+              <option value="">Select Current Piece</option>
+              <option value="">---- FLUTE ----</option>
+              <option value="F100_Anything_Previous_to_Mary_Had_a_Little_Lamb">F100 Anything Previous to Mary Had a Little Lamb</option>
+              <option value="F101_Mary_Had_A_Little_Lamb_-_Traditional">F101 Mary Had A Little Lamb - Traditional</option>
+              <option value="F102_Fireflies_-_Traditional">F102 Fireflies - Traditional</option>
+              <option value="F103_Kagome,_Kagome_-_Traditional">F103 Kagome, Kagome - Traditional"</option>
+              <option value="F104_Cuckoo_-_Traditional">F104 Cuckoo - Traditional</option>
+              <option value="F105_Lightly_Row_-_Traditional">F105 Lightly Row - Traditional</option>
+              <option value="F106_Twinkle,_Twinkle_Little_Star_Variations_-_Suzuki">F106 Twinkle, Twinkle Little Star Variations - Suzuki"</option>
+              <option value="F107_Go_Tell_Aunt_Rhody_-_Traditional">F107 Go Tell Aunt Rhody - Traditional</option>
+              <option value="F108_Amaryllis_-_Ghys">F108 Amaryllis - Ghys</option>
+              <option value="F109_Allegro_-_Suzuki">F109 Allegro - Suzuki</option>
+              <option value="F110_The_Honeybee_-_Traditional">F110 The Honeybee - Traditional</option>
+              <option value="F111_Long,_Long_Ago_-_Bayly">F111 Long, Long Ago - Bayly"</option>
+              <option value="F112_Lullaby_-_Schubert">F112 Lullaby - Schubert</option>
+              <option value="F113_The_Moon_Over_The_Ruined_Castle_-_Taki">F113 The Moon Over The Ruined Castle - Taki</option>
+              <option value="F114_Minuet_(1)_-_Bach">F114 Minuet (1) - Bach</option>
+              <option value="F115_Minuet_(2)_-_Bach">F115 Minuet (2) - Bach</option>
+              <option value="F116_Minuet_(3)_-_Bach">F116 Minuet (3) - Bach</option>
+              <option value="F117_Bourree_-_Handel">F117 Bourree - Handel</option>
+              <option value="F201_Minuet_-_Gluck">F201 Minuet - Gluck</option>
+              <option value="F202_Minuet_in_G_Minor_-_Bach">F202 Minuet in G Minor - Bach</option>
+              <option value="F203_March_-_Bach">F203 March - Bach</option>
+              <option value="F204_Minuet_in_B_Minor_-_Bach">F204 Minuet in B Minor - Bach</option>
+              <option value="F205_The_Last_Rose_Of_Summer_-_Traditional">F205 The Last Rose Of Summer - Traditional</option>
+              <option value="F206_Theme_-_Beethoven">F206 Theme - Beethoven</option>
+              <option value="F207_Melancholic_Fantasy_-_Reichert">F207 Melancholic Fantasy - Reichert</option>
+              <option value="F208_Allegretto_(Carnival_of_Venice)_-_Genin">F208 Allegretto (Carnival of Venice) - Genin</option>
+              <option value="F209_Minuet_-_Telemann">F209 Minuet - Telemann</option>
+              <option value="F210_Gavotte_-_Bach">F210 Gavotte - Bach</option>
+              <option value="F211_Polonaise_-_Bach">F211 Polonaise - Bach</option>
+              <option value="F212_On_Wings_Of_Song_-_Mendelssohn">F212 On Wings Of Song - Mendelssohn</option>
+              <option value="F301_Humoresque_-_Dvorak">F301 Humoresque - Dvorak</option>
+              <option value="F302_Orphee_et_Eurydice_-_Gluck">F302 Orphee et Eurydice - Gluck</option>
+              <option value="F303_Serenade_-_Drigo">F303 Serenade - Drigo</option>
+              <option value="F304_Scherzino_-_Anderson">F304 Scherzino - Anderson</option>
+              <option value="F305_Serenade_-_Woodall">F305 Serenade - Woodall</option>
+              <option value="F306_Serenade_a_Pierrette_-_Szulc">F306 Serenade a Pierrette - Szulc</option>
+              <option value="F307_Minuet_from_L'Arlesienne_-_Bizet">F307 Minuet from L'Arlesienne - Bizet</option>
+              <option value="F401_Menuetto_From_Sonata_IV_-_Bach">F401 Menuetto From Sonata IV - Bach</option>
+              <option value="F402_Siciliano_From_Sonata_II_-_Bach">F402 Siciliano From Sonata II - Bach</option>
+              <option value="F403_Minuet_From_Sonata_No._3_In_G_Major_-_Handel">F403 Minuet From Sonata No. 3 In G Major - Handel</option>
+              <option value="F404_Allegro_From_Sonata_No._3_In_G_Major_-_Handel">F404 Allegro From Sonata No. 3 In G Major - Handel</option>
+              <option value="F405_Andante_from_Sonata_II_in_D_Minor_-_Blavet">F405 Andante from Sonata II in D Minor - Blavet</option>
+              <option value="F406_Allemande_from_Sonata_II_in_D_Minor_-_Blavet">F406 Allemande from Sonata II in D Minor - Blavet</option>
+              <option value="F407_Gavotte_from_Sonata_II_in_D_Minor_-_Blavet">F407 Gavotte from Sonata II in D Minor - Blavet</option>
+              <option value="F408_Sarabande_from_Sonata_II_in_D_Minor_-_Blavet">F408 Sarabande from Sonata II in D Minor - Blavet</option>
+              <option value="F409_Finale_from_Sonata_II_in_D_Minor_-_Blavet">F409 Finale from Sonata II in D Minor - Blavet</option>
+              <option value="F501_Rondeau_-_Bach">F501 Rondeau - Bach</option>
+              <option value="F502_Sarabande_-_Bach">F502 Sarabande - Bach</option>
+              <option value="F503_Bourrees_I_&_II_-_Bach">F503 Bourrees I & II - Bach</option>
+              <option value="F504_Largo_-_Cimarosa">F504 Largo - Cimarosa</option>
+              <option value="F505_Rondo_-_Cimarosa">F505 Rondo - Cimarosa</option>
+              <option value="F506_Allegretto_-_Godard">F506 Allegretto - Godard</option>
+              <option value="F507_Swiss_Air_Variations_-_Boehm">F507 Swiss Air Variations - Boehm</option>
+              <option value="F601_Allegro_-_Cimarosa">F601 Allegro - Cimarosa</option>
+              <option value="F602_Polonaise_and_Double_-_Bach">F602 Polonaise and Double - Bach</option>
+              <option value="F603_Badinerie_-_Bach">F603 Badinerie - Bach</option>
+              <option value="F604_Overture_-_Bach">F604 Overture - Bach</option>
+              <option value="F701_Carnival_of_Venice_-_Genin">F701 Carnival of Venice - Genin</option>
+              <option value="F702_By_the_Brook_-_Wetzger">F702 By the Brook - Wetzger</option>
+              <option value="F703_Hungarian_Pastorale_Fantasie_-_Doppler">F703 Hungarian Pastorale Fantasie - Doppler</option>
+              <option value="F801_Concerto_in_G_Major_-_Quantz">F801 Concerto in G Major - Quantz</option>
+              <option value="F802_Fantasie_-_Faure">F802 Fantasie - Faure</option>
+              <option value="F901_Concerto_in_D_Major,_I._Allegro_aperto_-_Mozart">F901 Concerto in D Major, I. Allegro aperto - Mozart"</option>
+              <option value="F902_Concerto_in_D_Major,_II._Andante_ma_non_troppo_-_Mozart">F902 Concerto in D Major, II. Andante ma non troppo - Mozart"</option>
+              <option value="F903_Concerto_in_D_Major,_III._Allegro_-_Mozart">F903 Concerto in D Major, III. Allegro - Mozart"</option>
+              <option value="F1001_Grand_Solo_No._3_-_Tulou">F1001 Grand Solo No. 3 - Tulou</option>
+              <option value="F1002_Concerto_-_Chaminade">F1002 Concerto - Chaminade</option>
+              <option value="F1101_Concerto_in_G_Major,_I._Allegro_maestoso_-_Mozart">F1101 Concerto in G Major, I. Allegro maestoso - Mozart"</option>
+              <option value="F1102_Concerto_in_G_Major,_II._Adagio_non_troppo_-_Mozart">F1102 Concerto in G Major, II. Adagio non troppo - Mozart"</option>
+              <option value="F1103_Concerto_in_G_Major,_III._Rondo_-_Mozart">F1103 Concerto in G Major, III. Rondo - Mozart"</option>
+              <option value="F1201_Tremolo_Air_Varie">F1201 Tremolo Air Varie</option>
+              <option value="F1202_Fantasie_Melancholique">F1202 Fantasie Melancholique</option>
+              <option value="F1203_Fantaisie_-_Hue">F1203 Fantaisie - Hue</option>
+              <option value="F1301_Concerto_-_Otaka">F1301 Concerto - Otaka</option>
+              <option value="F1401_Concerto_-_Ibert">F1401 Concerto - Ibert</option>
+              <option value="F1500_Advanced_Flute_Tracks_-_Non-Suzuki_Repertoire">F1500 Advanced Flute Tracks - Non-Suzuki Repertoire</option>
+              <option value=""></option>
+              <option value="">---- PIANO ----</option>
+              <option value="099_Non-Suzuki_Method_Student:_Beginning-Intermediate_Player">099 Non-Suzuki Method Student: Beginning-Intermediate Player</option>
+              <option value="P100_Anything_Previous_to_Twinkles">P100 Anything Previous to Twinkles</option>
+              <option value="P101RH_Right_Hand_ONLY_Twinkle,_Twinkle,_Little_Star_Variations_-_Suzuki">P101RH Right Hand ONLY Twinkle, Twinkle, Little Star Variations - Suzuki</option>
+              <option value="P102RH_Right_Hand_ONLY_The_Honeybee_-_Folk">P102RH Right Hand ONLY The Honeybee - Folk</option>
+              <option value="P103RH_Right_Hand_ONLY_Cuckoo_-_Folk">P103RH Right Hand ONLY Cuckoo - Folk</option>
+              <option value="P104RH_Right_Hand_ONLY_Lightly_Row_-_Folk">P104RH Right Hand ONLY Lightly Row - Folk</option>
+              <option value="P105RH_Right_Hand_ONLY_French_Children's_Song_-_Folk">P105RH Right Hand ONLY French Children's Song - Folk</option>
+              <option value="P106RH_Right_Hand_ONLY_London_Bridge_-_Folk">P106RH Right Hand ONLY London Bridge - Folk</option>
+              <option value="P107RH_Right_Hand_ONLY_Mary_Had_a_Little_Lamb_-_Traditional">P107RH Right Hand ONLY Mary Had a Little Lamb - Traditional</option>
+              <option value="P108RH_Right_Hand_ONLY_Go_Tell_Aunt_Rhody_-_Folk">P108RH Right Hand ONLY Go Tell Aunt Rhody - Folk</option>
+              <option value="P109RH_Right_Hand_ONLY_Au_Clair_de_la_Lune_-_Lully">P109RH Right Hand ONLY Au Clair de la Lune - Lully</option>
+              <option value="P110RH_Right_Hand_ONLY_Long,_Long_Ago_-_Bayly">P110RH Right Hand ONLY Long, Long Ago - Bayly</option>
+              <option value="P111RH_Right_Hand_ONLY_Little_Playmates_-_Chwatal">P111RH Right Hand ONLY Little Playmates - Chwatal</option>
+              <option value="P112RH_Right_Hand_ONLY_Chant_Arabe_-_Anonymous">P112RH Right Hand ONLY Chant Arabe - Anonymous</option>
+              <option value="P113RH_Right_Hand_ONLY_Allegretto_1_-_Czerny">P113RH Right Hand ONLY Allegretto 1 - Czerny</option>
+              <option value="P114RH_Right_Hand_ONLY_Goodbye_to_Winter_-_Folk">P114RH Right Hand ONLY Goodbye to Winter - Folk</option>
+              <option value="P115RH_Right_Hand_ONLY_Allegretto_2_-_Czerny">P115RH Right Hand ONLY Allegretto 2 - Czerny</option>
+              <option value="P116RH_Right_Hand_ONLY_Christmas-Day_Secrets_-_Dutton">P116RH Right Hand ONLY Christmas-Day Secrets - Dutton</option>
+              <option value="P117RH_Right_Hand_ONLY_Allegro_-_Suzuki">P117RH Right Hand ONLY Allegro - Suzuki</option>
+              <option value="P118RH_Right_Hand_ONLY_Musette_-_Anonymous">P118RH Right Hand ONLY Musette - Anonymous</option>
+              <option value=""></option>
+              <option value="Hands_Together:">Hands Together:</option>
+              <option value="P101_Twinkle,_Twinkle,_Little_Star_Variations_-_Suzuki">P101 Twinkle, Twinkle, Little Star Variations - Suzuki</option>
+              <option value="P102_The_Honeybee_-_Folk">P102 The Honeybee - Folk</option>
+              <option value="P103_Cuckoo_-_Folk">P103 Cuckoo - Folk</option>
+              <option value="P104_Lightly_Row_-_Folk">P104 Lightly Row - Folk</option>
+              <option value="P105_French_Children's_Song_-_Folk">P105 French Children's Song - Folk</option>
+              <option value="P106_London_Bridge_-_Folk">P106 London Bridge - Folk</option>
+              <option value="P107_Mary_Had_a_Little_Lamb_-_Traditional">P107 Mary Had a Little Lamb - Traditional</option>
+              <option value="P108_Go_Tell_Aunt_Rhody_-_Folk">P108 Go Tell Aunt Rhody - Folk</option>
+              <option value="P109_Au_Clair_de_la_Lune_-_Lully">P109 Au Clair de la Lune - Lully</option>
+              <option value="P110_Long,_Long_Ago_-_Bayly">P110 Long, Long Ago - Bayly</option>
+              <option value="P111_Little_Playmates_-_Chwatal">P111 Little Playmates - Chwatal</option>
+              <option value="P112_Chant_Arabe_-_Anonymous">P112 Chant Arabe - Anonymous</option>
+              <option value="P113_Allegretto_1_-_Czerny">P113 Allegretto 1 - Czerny</option>
+              <option value="P114_Goodbye_to_Winter_-_Folk">P114 Goodbye to Winter - Folk</option>
+              <option value="P115_Allegretto_2_-_Czerny">P115 Allegretto 2 - Czerny</option>
+              <option value="P116_Christmas-Day_Secrets_-_Dutton">P116 Christmas-Day Secrets - Dutton</option>
+              <option value="P117_Allegro_-_Suzuki">P117 Allegro - Suzuki</option>
+              <option value="P118_Musette_-_Anonymous">P118 Musette - Anonymous</option>
+              <option value="P201_Écossaise_-_Hummel">P201 Écossaise - Hummel</option>
+              <option value="P202_A_Short_Story_-_Lichner">P202 A Short Story - Lichner</option>
+              <option value="P203_The_Happy_Farmer_-_Schumann">P203 The Happy Farmer - Schumann</option>
+              <option value="P204_Minuet_in_G_Major_(1)_-_Bach">P204 Minuet in G Major (1) - Bach</option>
+              <option value="P205_Minuet_in_G_Major_(2)_-_Bach">P205 Minuet in G Major (2) - Bach</option>
+              <option value="P206_Minuet_in_G_Minor_-_Bach">P206 Minuet in G Minor - Bach</option>
+              <option value="P207_Cradle_Song_-_von_Weber">P207 Cradle Song - von Weber</option>
+              <option value="P208_Arietta_-_Mozart">P208 Arietta - Mozart</option>
+              <option value="P209_Hungarian_Folk_Song_-_Bartók">P209 Hungarian Folk Song - Bartók</option>
+              <option value="P210_Melody,_from_Album_for_the_Young_-_Schuman">P210 Melody, from Album for the Young - Schumann</option>
+              <option value="P211_Minuet_in_G_Major_(3)_-_Bach">P211 Minuet in G Major (3) - Bach</option>
+              <option value="P212_Sonatina_in_G_Major_-_Beethoven">P212 Sonatina in G Major - Beethoven</option>
+              <option value="P213_Children_at_Play_-_Bartók">P213 Children at Play - Bartók</option>
+              <option value="P301_Sonatina_in_C_Major_-_Clementi">P301 Sonatina in C Major - Clementi</option>
+              <option value="P302_Minuet_in_G_Minor_-_Bach-Petzold">P302 Minuet in G Minor - Bach-Petzold</option>
+              <option value="P303_Sonatina_in_C_Major_-_Kuhlau">P303 Sonatina in C Major - Kuhlau</option>
+              <option value="P304_Theme,_from_Symphony_No._3_(Eroica)_-_Beethoven">P304 Theme, from Symphony No. 3 (Eroica) - Beethoven</option>
+              <option value="P305_The_Wild_Rider_-_Schumann">P305 The Wild Rider - Schumann</option>
+              <option value="P306_Little_Waltz,_from_Little_Flowers_-_Gurlitt">P306 Little Waltz, from Little Flowers - Gurlitt</option>
+              <option value="P307_Écossaise_-_Beethoven">P307 Écossaise - Beethoven</option>
+              <option value="P308_Sonatina_in_C_Major_-_Clementi">P308 Sonatina in C Major - Clementi</option>
+              <option value="P309_Teasing_Song_-_Bartók">P309 Teasing Song - Bartók</option>
+              <option value="P401_Rondo_-_Mozart">P401 Rondo - Mozart</option>
+              <option value="P402_Minuet_I,_from_8_Minuets_-_Mozart">P402 Minuet I, from 8 Minuets - Mozart</option>
+              <option value="P403_Arabesque_-_Burgmüller">P403 Arabesque - Burgmüller</option>
+              <option value="P404_By_the_Limpid_Stream_-_Burgmüller">P404 By the Limpid Stream - Burgmüller</option>
+              <option value="P405_Musette_-_Bach">P405 Musette - Bach</option>
+              <option value="P406_Sonata_in_G_Major_-_Beethoven">P406 Sonata in G Major - Beethoven</option>
+              <option value="P407_Bagatelle_-_Tcherepnin">P407 Bagatelle - Tcherepnin</option>
+              <option value="P408_Gavotte_in_G_Minor_-_Bach">P408 Gavotte in G Minor - Bach</option>
+              <option value="P409_Minuets_I_and_II,_from_Partita_in_B-flat_Major_-_Bach">P409 Minuets I and II, from Partita in B-flat Major - Bach</option>
+              <option value="P410_Gigue,_from_Partita_in_B-flat_Major_-_Bach">P410 Gigue, from Partita in B-flat Major - Bach</option>
+              <option value="P501_Fur_Elise_-_Beethoven">P501 Fur Elise - Beethoven</option>
+              <option value="P502_Old_French_Song_-_Tchaikovsky">P502 Old French Song - Tchaikovsky</option>
+              <option value="P503_2-Part_Invention_No._1_-_Bach">P503 2-Part Invention No. 1 - Bach</option>
+              <option value="P504_Sonatina_in_F_Major_-_Beethoven">P504 Sonatina in F Major - Beethoven</option>
+              <option value="P505_About_Foreign_Lands_and_People_-_Schumann">P505 About Foreign Lands and People - Schumann</option>
+              <option value="P506_Sonata_in_C_Major_-_Haydn">P506 Sonata in C Major - Haydn</option>
+              <option value="P507_Waltz_in_A_Minor_-_Chopin">P507 Waltz in A Minor - Chopin</option>
+              <option value="P508_Le_Coucou_-_Daquin">P508 Le Coucou - Daquin</option>
+              <option value="P601_Sonata_in_C_-_Mozart">P601 Sonata in C - Mozart</option>
+              <option value="P602_Gondola_Boat_Song_-_Mendelssohn">P602 Gondola Boat Song - Mendelssohn</option>
+              <option value="P603_2-Part_Invention_No._8_-_Bach">P603 2-Part Invention No. 8 - Bach</option>
+              <option value="P604_Nocturne_-_Grieg">P604 Nocturne - Grieg</option>
+              <option value="P605_Sonata_Pastorale_-_Scarlatti">P605 Sonata Pastorale - Scarlatti</option>
+              <option value="P606_Sonata,_K._330_-_Mozart">P606 Sonata, K. 330 - Mozart</option>
+              <option value="P607_Spanish_Dance_No._5,_Andaluza_-_Granados">P607 Spanish Dance No. 5, Andaluza - Granados</option>
+              <option value="P608_O_Polichinelo_-_Villa-Lobos">P608 O Polichinelo - Villa-Lobos</option>
+              <option value="P701_Sonata,_K._331_-_Mozart">P701 Sonata, K. 331 - Mozart</option>
+              <option value="P702_Prelude_and_Fugue_in_D_Major,_No._5_-_Bach">P702 Prelude and Fugue in D Major, No. 5 - Bach</option>
+              <option value="P703_Nocturne_in_C#_Minor_-_Chopin">P703 Nocturne in C# Minor - Chopin</option>
+              <option value="P704_The_Harmonious_Blacksmith_-_Handel">P704 The Harmonious Blacksmith - Handel</option>
+              <option value="P705_Maid_with_the_Flaxen_Hair_-_Debussy">P705 Maid with the Flaxen Hair - Debussy</option>
+              <option value="P706_Romanian_Folk_Dances_-_Bartok">P706 Romanian Folk Dances - Bartok</option>
+              <option value="P800_Junior_Advanced_Piano_Track_-_Non-Suzuki_Repertoire">P800 Junior Advanced Piano Track - Non-Suzuki Repertoire</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="masterclass">Name of Masterclass Performance Piece</label>
+            <input type="text" class="form-control" id="masterclass" placeholder="Masterclass Performance Piece" required>
+          </div>
+          <div class="col-md-2 mb-3">
+            Honors Recital?
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="honorsYes" name="honors" value="Yes" required>
+              <label class="custom-control-label" for="honorsYes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+              <input type="radio" class="custom-control-input" id="honorsNo" name="honors" value="No" required>
+              <label class="custom-control-label" for="honorsNo">No</label>
+              <div class="invalid-feedback">Do you wish to participate in the Honors Recital?</div>
+            </div>
+          </div>
+          <div class="col-md-2 mb-3">
+            Sonata Competition?
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="sonataYes" name="sonata" value="Yes" required>
+              <label class="custom-control-label" for="sonataYes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+              <input type="radio" class="custom-control-input" id="sonataNo" name="sonata" value="No" required>
+              <label class="custom-control-label" for="sonataNo">No</label>
+              <div class="invalid-feedback">Do you wish to participate in the Sonata Competition?</div>
+            </div>
+          </div>
+        </div><!-- /form-row -->
+        
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="accompanying">Name of Accompanying Adult</label>
+            <input type="text" class="form-control" id="accompanying" placeholder="Name of Accompanying Adult" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            Request Student to be escorted by a Mentor?
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="mentorYes" name="mentor" value="Yes" required>
+              <label class="custom-control-label" for="mentorYes">Yes</label>
+            </div>
+            <div class="custom-control custom-radio mb-3">
+              <input type="radio" class="custom-control-input" id="mentorNo" name="mentor" value="No" required>
+              <label class="custom-control-label" for="mentorNo">No</label>
+              <div class="invalid-feedback">Request Student to be escorted by a Mentor?</div>
+            </div>
+          </div>
+        </div><!-- /form-row -->
+      </div><!-- /form-group -->
+      
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      
+      <button class="btn btn-primary" type="submit">Submit Registration</button>
+    </form>
+    
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+  </div>
+{% include donate-box-2.html %}
