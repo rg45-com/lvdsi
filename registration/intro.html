@@ -2,6 +2,7 @@
 layout: page
 title: 2018 Intro to Music Registration
 page_name: reg-intro
+datepicker: 1
 ---
 <div class="container">
   <div class="slogan"> 
@@ -38,7 +39,7 @@ page_name: reg-intro
         <div class="form-row">        
           <div class="col-md-6 mb-3">
             <label for="dob">Date of Birth</label>
-            <input type="text" class="form-control" id="dob" name="dob" placeholder="MM/DD/YYYY" required>
+            <input type="text" class="form-control fieldset__input js__datepicker" id="dob" name="dob" placeholder="YYYY-MM-DD" required>
             <div class="invalid-feedback">
               Please enter Student's valid date of birth.
             </div>
@@ -95,13 +96,13 @@ page_name: reg-intro
             <select class="custom-select" id="enrichment" name="enrichment">
               {% include form-dropdown-enrichment.html %}
             </select>
-            <div class="invalid-feedback">
-               Please select a T-Shirt size.
-            </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="accompanyingAdult">Name of Accompanying Adult:</label>
             <input type="text" class="form-control" id="accompanyingAdult" name="accompanyingAdult" placeholder="Name of Accompanying Adult" required>
+            <div class="invalid-feedback">
+               Please enter the name of the accompanying adult.
+            </div>
           </div>
         </div><!-- /form-row -->
         
