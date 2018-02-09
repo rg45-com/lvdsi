@@ -12,7 +12,7 @@ datepicker: 1
   <p><span class="firstletter">F</span>lute &amp; Piano Registration form.  Please complete this form to register.  Once you register, the next step is to submit payment.</p>
 
   <div class="container mb-3">
-    <form class="needs-validation" novalidate name="flute-piano" netlify-honeypot="bot-field" action="thank-you" netlify>
+    <form class="needs-validation" novalidate name="flute-piano" netlify-honeypot="bot-field" action="thank-you.html" netlify>
       <p class="d-none">
         <label>It's a trap! <input name="bot-field"></label>
       </p>
@@ -23,14 +23,14 @@ datepicker: 1
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="studentLast">Student Last Name</label>
-            <input type="text" class="form-control" id="studentLast" placeholder="Last name" required>
+            <input type="text" class="form-control" id="studentLast" name="studentLast" placeholder="Last name" required>
             <div class="invalid-feedback">
               Please provide the Student's Last name.
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="studentFirst">Student First Name</label>
-            <input type="text" class="form-control" id="studentFirst" placeholder="First name" required>
+            <input type="text" class="form-control" id="studentFirst" name="studentFirst" placeholder="First name" required>
             <div class="invalid-feedback">
                 Please provide the Student's First name.
               </div>
@@ -40,14 +40,14 @@ datepicker: 1
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="studentEmail">Student Email</label>
-            <input type="text" class="form-control" id="studentEmail" placeholder="Student Email" required>
+            <input type="text" class="form-control" id="studentEmail" name="studentEmail" placeholder="Student Email" required>
             <div class="invalid-feedback">
               Please provide the Student's email address.
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="studentCell">Student Cell Phone</label>
-            <input type="number" class="form-control" id="studentCell" placeholder="Student Cell Phone" required>
+            <input type="number" class="form-control" id="studentCell" name="studentCell" placeholder="Student Cell Phone" required>
             <div class="invalid-feedback">
                 Please provide the Student's First name.
               </div>
@@ -57,14 +57,14 @@ datepicker: 1
         <div class="form-row">        
           <div class="col-md-6 mb-3">
             <label for="dob">Date of Birth</label>
-            <input type="text" class="form-control fieldset__input js__datepicker" id="dob" placeholder="YYYY-MM-DD" required>
+            <input type="text" class="form-control fieldset__input js__datepicker" id="dob" name="dob" placeholder="YYYY-MM-DD" required>
             <div class="invalid-feedback">
               Please enter Student's valid date of birth.
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="gradeLevel">Grade in School 2017-18:</label>
-            <select class="custom-select" id="gradeLevel">
+            <select class="custom-select" id="gradeLevel" name="gradeLevel">
               <option value="">Please select a grade</option>
               <option value="Pre-K">Pre-K</option>
               <option value="Kinder">Kinder</option>
@@ -103,7 +103,7 @@ datepicker: 1
         <div class="form-row">        
           <div class="col-md-6 mb-3">
             <label for="program">Program:</label>
-            <select class="custom-select" id="program" required>
+            <select class="custom-select" id="program" name="program" required>
               <option value="">Choose Program</option>
               <option value="Flute">Flute</option>
               <option value="Piano">Piano</option>
@@ -114,14 +114,14 @@ datepicker: 1
           </div>
           <div class="col-md-6 mb-3">
             <label for="homeInstructor">Home Private Studio Instructor</label>
-            <input type="text" class="form-control" id="homeInstructor" placeholder="Home Instructor">
+            <input type="text" class="form-control" id="homeInstructor" name="homeInstructor" placeholder="Home Instructor">
           </div>
         </div><!-- /form-row -->
         
         <div class="form-row">        
           <div class="col-md-6 mb-3">
             <label for="readingLevel">Music Reading Level</label>
-            <select class="custom-select" id="readingLevel" required>
+            <select class="custom-select" id="readingLevel" name="readingLevel" required>
               <option value="">Music Reading Level</option>
               <option value="Beginning">Beginning</option>
               <option value="Intermediate">Intermediate</option>
@@ -133,7 +133,7 @@ datepicker: 1
           </div>
           <div class="col-md-6 mb-3">
             <label for="fluteOwned">Flute Students - Do you own</label>
-            <select class="custom-select" id="fluteOwned">
+            <select class="custom-select" id="fluteOwned" name="fluteOwned">
               <option value="">Do you own?</option>
               <option value="Piccolo">Piccolo</option>
               <option value="Alto Flute">Alto Flute</option>
@@ -145,7 +145,7 @@ datepicker: 1
         <div class="form-row">        
           <div class="col-md-6 mb-3">
             <label for="tShirt1">T-Shirt Size:</label>
-            <select class="custom-select" id="tShirt1" required>
+            <select class="custom-select" id="tShirt1" name="tShirt1" required>
               {% include form-dropdown-tshirt.html %}
             </select>
             <div class="invalid-feedback">
@@ -154,7 +154,7 @@ datepicker: 1
           </div>
           <div class="col-md-6 mb-3">
             <label for="tShirt2">Extra T-Shirt (optional):</label>
-            <select class="custom-select" id="tShirt2">
+            <select class="custom-select" id="tShirt2" name="tShirt2">
               {% include form-dropdown-tshirt.html %}
             </select>
             <div class="invalid-feedback">
@@ -166,7 +166,7 @@ datepicker: 1
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="enrichment1st">Enrichment Class (1st choice)</label>
-            <select class="custom-select" id="enrichment1st" required>
+            <select class="custom-select" id="enrichment1st" name="enrichment1st" required>
               {% include form-dropdown-enrichment.html %}
             </select>
             <div class="invalid-feedback">
@@ -175,7 +175,7 @@ datepicker: 1
           </div>
           <div class="col-md-6 mb-3">
             <label for="enrichment2nd">Enrichment Class (2nd choice)</label>
-            <select class="custom-select" id="enrichment2nd" required>
+            <select class="custom-select" id="enrichment2nd" name="enrichment2nd" required>
               {% include form-dropdown-enrichment.html %}
             </select>
             <div class="invalid-feedback">
@@ -187,7 +187,7 @@ datepicker: 1
         <div class="form-row">
           <div class="col-md-4 mb-3">
             <label for="currentPiece">Name of Current Performance Piece</label>
-            <select class="custom-select" id="currentPiece" required>
+            <select class="custom-select" id="currentPiece" name="currentPiece" required>
               <option value="">Select Current Piece</option>
               <option value="">---- FLUTE ----</option>
               <option value="F100_Anything_Previous_to_Mary_Had_a_Little_Lamb">F100 Anything Previous to Mary Had a Little Lamb</option>
@@ -367,7 +367,7 @@ datepicker: 1
           </div>
           <div class="col-md-4 mb-3">
             <label for="masterclass">Name of Masterclass Performance Piece</label>
-            <input type="text" class="form-control" id="masterclass" placeholder="Masterclass Performance Piece" required>
+            <input type="text" class="form-control" id="masterclass" name="masterclass" placeholder="Masterclass Performance Piece" required>
           </div>
           <div class="col-md-2 mb-3">
             Honors Recital?
@@ -398,7 +398,7 @@ datepicker: 1
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="accompanying">Name of Accompanying Adult</label>
-            <input type="text" class="form-control" id="accompanying" placeholder="Name of Accompanying Adult" required>
+            <input type="text" class="form-control" id="accompanying" name="accompanying" placeholder="Name of Accompanying Adult" required>
           </div>
           <div class="col-md-6 mb-3">
             Request Student to be escorted by a Mentor?
@@ -415,40 +415,11 @@ datepicker: 1
         </div><!-- /form-row -->
       </div><!-- /form-group -->
       
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            Agree to terms and conditions
-          </label>
-          <div class="invalid-feedback">
-            You must agree before submitting.
-          </div>
-        </div>
-      </div>
       
       <button class="btn btn-primary" type="submit">Submit Registration</button>
     </form>
     
-    <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-    </script>
+    {% include form-validation.html %}
+    
   </div>
 {% include donate-box-2.html %}

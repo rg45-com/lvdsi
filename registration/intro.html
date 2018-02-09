@@ -11,7 +11,7 @@ page_name: reg-intro
   <p><span class="firstletter">I</span>ntro to Music Registration form.  Please complete this form to register.  Once you register, the next step is to submit payment.</p>
 
   <div class="container mb-3">
-    <form class="needs-validation" novalidate name="intro-music" netlify-honeypot="bot-field" action="thank-you" netlify>
+    <form class="needs-validation" novalidate name="intro-music" netlify-honeypot="bot-field" action="thank-you.html" netlify>
       <p class="d-none">
         <label>It's a trap! <input name="bot-field"></label>
       </p>
@@ -21,14 +21,14 @@ page_name: reg-intro
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="studentLast">Student Last Name</label>
-            <input type="text" class="form-control" id="studentLast" placeholder="Last name" required>
+            <input type="text" class="form-control" id="studentLast" name="studentLast" placeholder="Last name" required>
             <div class="invalid-feedback">
               Please provide the Student's Last name.
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="studentFirst">Student First Name</label>
-            <input type="text" class="form-control" id="studentFirst" placeholder="First name" required>
+            <input type="text" class="form-control" id="studentFirst" name="studentFirst" placeholder="First name" required>
             <div class="invalid-feedback">
                 Please provide the Student's First name.
               </div>
@@ -38,14 +38,14 @@ page_name: reg-intro
         <div class="form-row">        
           <div class="col-md-6 mb-3">
             <label for="dob">Date of Birth</label>
-            <input type="text" class="form-control" id="dob" placeholder="MM/DD/YYYY" required>
+            <input type="text" class="form-control" id="dob" name="dob" placeholder="MM/DD/YYYY" required>
             <div class="invalid-feedback">
               Please enter Student's valid date of birth.
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <label for="gradeLevel">Grade in School 2017-18:</label>
-            <select class="custom-select" id="gradeLevel">
+            <select class="custom-select" id="gradeLevel" name="gradeLevel">
               <option value="">Please select a grade</option>
               <option value="Pre-K">Pre-K</option>
               <option value="Kinder">Kinder</option>
@@ -72,7 +72,7 @@ page_name: reg-intro
         <div class="form-row">        
           <div class="col-md-6 mb-3">
             <label for="tShirt1">T-Shirt Size:</label>
-            <select class="custom-select" id="tShirt1" required>
+            <select class="custom-select" id="tShirt1" name="tShirt1" required>
               {% include form-dropdown-tshirt.html %}
             </select>
             <div class="invalid-feedback">
@@ -81,7 +81,7 @@ page_name: reg-intro
           </div>
           <div class="col-md-6 mb-3">
             <label for="tShirt2">Extra T-Shirt (optional):</label>
-            <select class="custom-select" id="tShirt2">
+            <select class="custom-select" id="tShirt2" name="tShirt2">
               {% include form-dropdown-tshirt.html %}
             </select>
             <div class="invalid-feedback">
@@ -92,7 +92,7 @@ page_name: reg-intro
         <div class="form-row">
           <div class="col-md-6 mb-3">
             <label for="enrichment">Extra Paid Enrichment Class (optional):</label>
-            <select class="custom-select" id="enrichment">
+            <select class="custom-select" id="enrichment" name="enrichment">
               {% include form-dropdown-enrichment.html %}
             </select>
             <div class="invalid-feedback">
@@ -101,46 +101,16 @@ page_name: reg-intro
           </div>
           <div class="col-md-6 mb-3">
             <label for="accompanying">Name of Accompanying Adult:</label>
-            <input type="text" class="form-control" id="accompanying" placeholder="Name of Accompanying Adult" required>
+            <input type="text" class="form-control" id="accompanying" name="accompanying" placeholder="Name of Accompanying Adult" required>
           </div>
         </div><!-- /form-row -->
         
       </div><!-- /form-group -->
-      
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            Agree to terms and conditions
-          </label>
-          <div class="invalid-feedback">
-            You must agree before submitting.
-          </div>
-        </div>
-      </div>
-      
+            
       <button class="btn btn-primary" type="submit">Submit Registration</button>
     </form>
     
-    <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-    </script>
+    {% include form-validation.html %}
+    
   </div>
 {% include donate-box-2.html %}

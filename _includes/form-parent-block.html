@@ -1,21 +1,21 @@
 <div class="form-row">
   <div class="col-md-4 mb-3">
     <label for="parentLast">Parent Last Name</label>
-    <input type="text" class="form-control" id="parentLast" placeholder="Last name" required>
+    <input type="text" class="form-control" id="parentLast" name="parentLast" placeholder="Last name" required>
     <div class="invalid-feedback">
       Please provide the Parent's Last name.
     </div>
   </div>
   <div class="col-md-4 mb-3">
     <label for="parentFirst">Parent First Name</label>
-    <input type="text" class="form-control" id="parentFirst" placeholder="First name" required>
+    <input type="text" class="form-control" id="parentFirst" name="parentFirst" placeholder="First name" required>
     <div class="invalid-feedback">
         Please provide the Parent's First name.
       </div>
   </div>
   <div class="col-md-4 mb-3">
     <label for="parentEmail">Parent email address</label>
-    <input type="email" class="form-control" id="parentEmail" aria-describedby="emailHelp" placeholder="Email address" required>
+    <input type="email" class="form-control" id="parentEmail" name="parentEmail" aria-describedby="emailHelp" placeholder="Email address" required>
   <!--             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
     <div class="invalid-feedback">
         Please provide the Parent's email address.
@@ -26,7 +26,7 @@
 <div class="form-row">
   <div class="col-md-12 mb-3">
     <label for="address">Address</label>
-    <input type="text" class="form-control" id="address" placeholder="Address" required>
+    <input type="text" class="form-control" id="address" name="address" placeholder="Address" required>
     <div class="invalid-feedback">
       Please provide a valid city.
     </div>
@@ -36,14 +36,14 @@
 <div class="form-row">
   <div class="col-md-6 mb-3">
     <label for="city">City</label>
-    <input type="text" class="form-control" id="city" placeholder="City" required>
+    <input type="text" class="form-control" id="city" name="city" placeholder="City" required>
     <div class="invalid-feedback">
       Please provide a valid city.
     </div>
   </div>
   <div class="col-md-3 mb-3">
     <label for="state">State</label>
-    <select class="custom-select" id="state" required>
+    <select class="custom-select" id="state" name="state" required>
       {% include form-dropdown-state.html %}
     </select>
     <div class="invalid-feedback">
@@ -52,7 +52,7 @@
   </div>
   <div class="col-md-3 mb-3">
     <label for="zip">Zip</label>
-    <input type="number" class="form-control" id="zip" placeholder="Zip" required>
+    <input type="number" class="form-control" id="zip" name="zip" placeholder="Zip" required>
     <div class="invalid-feedback">
       Please provide a valid zip.
     </div>
@@ -62,7 +62,7 @@
 <div class="form-row">
   <div class="col-md-3 mb-3">
     <label for="parentsCell">Parents Cell Phone</label>
-    <input type="phone" class="form-control" id="parentsCell" placeholder="Cell Phone" required>
+    <input type="phone" class="form-control" id="parentsCell" name="parentsCell" placeholder="Cell Phone" required>
     <div class="invalid-feedback">
       Please provide a valid cell phone.
     </div>
@@ -81,10 +81,10 @@
   </div>
   <div class="col-md-3 mb-3">
     <label for="siblings">Siblings Attending (name):</label>
-    <input type="text" class="form-control" id="siblings" placeholder="Siblings Attending (name)">
+    <input type="text" class="form-control" id="siblings" name="siblings" placeholder="Siblings Attending (name)">
   </div>
   <div class="col-md-4 mb-3">
     <label for="referral">Who can we thank for referring you?:</label>
-    <input type="text" class="form-control" id="referral" placeholder="Who can we thank for referring you?">
+    <input type="text" class="form-control" id="referral" name="referral" placeholder="Who can we thank for referring you?">
   </div>
 </div><!-- /form-row -->
