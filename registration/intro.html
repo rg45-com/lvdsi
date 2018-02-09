@@ -11,7 +11,10 @@ page_name: reg-intro
   <p><span class="firstletter">I</span>ntro to Music Registration form.  Please complete this form to register.  Once you register, the next step is to submit payment.</p>
 
   <div class="container mb-3">
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" novalidate name="intro-music" netlify-honeypot="bot-field" action="thank-you" netlify>
+      <p class="d-none">
+        <label>It's a trap! <input name="bot-field"></label>
+      </p>
       
       <div class="form-group border rounded border-dark p-3">
         <h3 class="slogan text-left">Student Info</h3>

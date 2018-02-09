@@ -12,7 +12,10 @@ datepicker: 1
   <p><span class="firstletter">F</span>lute &amp; Piano Registration form.  Please complete this form to register.  Once you register, the next step is to submit payment.</p>
 
   <div class="container mb-3">
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" novalidate name="flute-piano" netlify-honeypot="bot-field" action="thank-you" netlify>
+      <p class="d-none">
+        <label>It's a trap! <input name="bot-field"></label>
+      </p>
       
       <div class="form-group border rounded border-dark p-3">
         <h3 class="slogan text-left">Student Info</h3>
