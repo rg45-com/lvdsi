@@ -12,7 +12,7 @@ datepicker: 1
   <p><span class="firstletter">F</span>lute &amp; Piano Registration form.  Please complete this form to register.  Once you register, the next step is to submit payment.</p>
 
   <div class="container mb-3">
-    <form class="needs-validation" novalidate name="flute-piano" netlify-honeypot="bot-field" action="thank_you.html" netlify>
+    <form class="needs-validation" novalidate name="flute-piano" netlify-honeypot="bot-field" action="/registration/thank_you.html" netlify>
       <p class="d-none">
         <label>It's a trap! <input name="bot-field"></label>
       </p>
@@ -47,9 +47,9 @@ datepicker: 1
           </div>
           <div class="col-md-6 mb-3">
             <label for="studentCell">Student Cell Phone</label>
-            <input type="number" class="form-control" id="studentCell" name="studentCell" placeholder="Student Cell Phone" required>
+            <input type="tel" class="form-control" id="studentCell" name="studentCell" placeholder="Student Cell Phone" required>
             <div class="invalid-feedback">
-                Please provide the Student's First name.
+                Please provide the student's phone number.
               </div>
           </div>
         </div><!-- /form-row -->
@@ -397,8 +397,8 @@ datepicker: 1
         
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="accompanying">Name of Accompanying Adult</label>
-            <input type="text" class="form-control" id="accompanying" name="accompanying" placeholder="Name of Accompanying Adult" required>
+            <label for="accompanyingAdult">Name of Accompanying Adult</label>
+            <input type="text" class="form-control" id="accompanyingAdult" name="accompanyingAdult" placeholder="Name of Accompanying Adult" required>
           </div>
           <div class="col-md-6 mb-3">
             Request Student to be escorted by a Mentor?
