@@ -21,10 +21,11 @@ description: >- # this means to ignore newlines until "baseurl:"
 url: "http://www.lvdesertsuzuki.com" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
-google_analytics: "set me"
+google_analytics: "UA-113941522-1"
 flute_reg_url: "/registration/flute-piano.html"
 piano_reg_url: "/registration/flute-piano.html"
 intro_reg_url: "/registration/intro.html"
+donate_url: "/cart.html#!/Donations/c/12752637/offset=0&sort=normal"
 
 # Build settings
 markdown: kramdown

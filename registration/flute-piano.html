@@ -22,14 +22,14 @@ datepicker: 1
         
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="studentLast">Student Last Name</label>
+            <label for="studentLast">Student Last Name*</label>
             <input type="text" class="form-control" id="studentLast" name="studentLast" placeholder="Last name" required>
             <div class="invalid-feedback">
               Please provide the Student's Last name.
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="studentFirst">Student First Name</label>
+            <label for="studentFirst">Student First Name*</label>
             <input type="text" class="form-control" id="studentFirst" name="studentFirst" placeholder="First name" required>
             <div class="invalid-feedback">
                 Please provide the Student's First name.
@@ -39,14 +39,14 @@ datepicker: 1
         
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="studentEmail">Student Email</label>
+            <label for="studentEmail">Student Email*</label>
             <input type="text" class="form-control" id="studentEmail" name="studentEmail" placeholder="Student Email" required>
             <div class="invalid-feedback">
               Please provide the Student's email address.
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="studentCell">Student Cell Phone</label>
+            <label for="studentCell">Student Cell Phone*</label>
             <input type="tel" class="form-control" id="studentCell" name="studentCell" placeholder="Student Cell Phone" required>
             <div class="invalid-feedback">
                 Please provide the student's phone number.
@@ -56,15 +56,15 @@ datepicker: 1
         
         <div class="form-row">        
           <div class="col-md-6 mb-3">
-            <label for="dob">Date of Birth</label>
+            <label for="dob">Date of Birth*</label>
             <input type="text" class="form-control fieldset__input js__datepicker" id="dob" name="dob" placeholder="YYYY-MM-DD" required>
             <div class="invalid-feedback">
               Please enter Student's valid date of birth.
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="gradeLevel">Grade in School 2017-18:</label>
-            <select class="custom-select" id="gradeLevel" name="gradeLevel">
+            <label for="gradeLevel">Grade in School 2017-18*</label>
+            <select class="custom-select" id="gradeLevel" name="gradeLevel" required>
               <option value="">Please select a grade</option>
               <option value="Pre-K">Pre-K</option>
               <option value="Kinder">Kinder</option>
@@ -102,7 +102,7 @@ datepicker: 1
         
         <div class="form-row">        
           <div class="col-md-6 mb-3">
-            <label for="program">Program:</label>
+            <label for="program">Program*</label>
             <select class="custom-select" id="program" name="program" required>
               <option value="">Choose Program</option>
               <option value="Flute">Flute</option>
@@ -120,7 +120,7 @@ datepicker: 1
         
         <div class="form-row">        
           <div class="col-md-6 mb-3">
-            <label for="readingLevel">Music Reading Level</label>
+            <label for="readingLevel">Music Reading Level*</label>
             <select class="custom-select" id="readingLevel" name="readingLevel" required>
               <option value="">Music Reading Level</option>
               <option value="Beginning">Beginning</option>
@@ -135,6 +135,7 @@ datepicker: 1
             <label for="fluteOwned">Flute Students - Do you own</label>
             <select class="custom-select" id="fluteOwned" name="fluteOwned">
               <option value="">Do you own?</option>
+              <option value="C_Flute">C flute only</option>
               <option value="Piccolo">Piccolo</option>
               <option value="Alto Flute">Alto Flute</option>
               <option value="Bass Flute">Bass Flute</option>
@@ -144,7 +145,7 @@ datepicker: 1
         
         <div class="form-row">        
           <div class="col-md-6 mb-3">
-            <label for="tShirt1">T-Shirt Size:</label>
+            <label for="tShirt1">T-Shirt Size*</label>
             <select class="custom-select" id="tShirt1" name="tShirt1" required>
               {% include form-dropdown-tshirt.html %}
             </select>
@@ -153,43 +154,45 @@ datepicker: 1
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="tShirt2">Extra T-Shirt (optional):</label>
-            <select class="custom-select" id="tShirt2" name="tShirt2">
+            <label for="tShirt2">Extra T-Shirt*</label>
+            <select class="custom-select" id="tShirt2" name="tShirt2" required>
               {% include form-dropdown-tshirt.html %}
+              <option value="No_Extra_Shirt">No Extra Shirt</option>
             </select>
             <div class="invalid-feedback">
-               Please select a T-Shirt size.
+               Please select an extra T-Shirt size, or choose "No Extra Shirt".
             </div>
           </div>
         </div><!-- /form-row -->
         
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="enrichment1st">Enrichment Class (1st choice)</label>
+            <label for="enrichment1st">Enrichment Class (1st choice)*</label>
             <select class="custom-select" id="enrichment1st" name="enrichment1st" required>
               {% include form-dropdown-enrichment.html %}
             </select>
             <div class="invalid-feedback">
-               Please select a T-Shirt size.
+               Please select 1st choice enrichment class.
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="enrichment2nd">Enrichment Class (2nd choice)</label>
+            <label for="enrichment2nd">Enrichment Class (2nd choice)*</label>
             <select class="custom-select" id="enrichment2nd" name="enrichment2nd" required>
               {% include form-dropdown-enrichment.html %}
             </select>
             <div class="invalid-feedback">
-               Please select a T-Shirt size.
+               Please select 2nd choice enrichment class.
             </div>
           </div>
         </div><!-- /form-row -->
         
         <div class="form-row">
           <div class="col-md-4 mb-3">
-            <label for="currentPiece">Name of Current Performance Piece</label>
+            <label for="currentPiece">Name of Current Performance Piece*</label>
             <select class="custom-select" id="currentPiece" name="currentPiece" required>
               <option value="">Select Current Piece</option>
               <option value="">---- FLUTE ----</option>
+              <option value="099_Non-Suzuki_Student">099 Non-Suzuki Student</option>
               <option value="F100_Anything_Previous_to_Mary_Had_a_Little_Lamb">F100 Anything Previous to Mary Had a Little Lamb</option>
               <option value="F101_Mary_Had_A_Little_Lamb_-_Traditional">F101 Mary Had A Little Lamb - Traditional</option>
               <option value="F102_Fireflies_-_Traditional">F102 Fireflies - Traditional</option>
@@ -268,7 +271,7 @@ datepicker: 1
               <option value="F1500_Advanced_Flute_Tracks_-_Non-Suzuki_Repertoire">F1500 Advanced Flute Tracks - Non-Suzuki Repertoire</option>
               <option value=""></option>
               <option value="">---- PIANO ----</option>
-              <option value="099_Non-Suzuki_Method_Student:_Beginning-Intermediate_Player">099 Non-Suzuki Method Student: Beginning-Intermediate Player</option>
+              <option value="099_Non-Suzuki_Student">099 Non-Suzuki Student</option>
               <option value="P100_Anything_Previous_to_Twinkles">P100 Anything Previous to Twinkles</option>
               <option value="P101RH_Right_Hand_ONLY_Twinkle,_Twinkle,_Little_Star_Variations_-_Suzuki">P101RH Right Hand ONLY Twinkle, Twinkle, Little Star Variations - Suzuki</option>
               <option value="P102RH_Right_Hand_ONLY_The_Honeybee_-_Folk">P102RH Right Hand ONLY The Honeybee - Folk</option>
@@ -366,11 +369,11 @@ datepicker: 1
             </select>
           </div>
           <div class="col-md-4 mb-3">
-            <label for="masterclass">Name of Masterclass Performance Piece</label>
+            <label for="masterclass">Name of Masterclass Performance Piece*</label>
             <input type="text" class="form-control" id="masterclass" name="masterclass" placeholder="Masterclass Performance Piece" required>
           </div>
           <div class="col-md-2 mb-3">
-            Honors Recital?
+            Honors Recital?*
             <div class="custom-control custom-radio">
               <input type="radio" class="custom-control-input" id="honorsYes" name="honors" value="Yes" required>
               <label class="custom-control-label" for="honorsYes">Yes</label>
@@ -382,7 +385,7 @@ datepicker: 1
             </div>
           </div>
           <div class="col-md-2 mb-3">
-            Sonata Competition?
+            Sonata Competition?*
             <div class="custom-control custom-radio">
               <input type="radio" class="custom-control-input" id="sonataYes" name="sonata" value="Yes" required>
               <label class="custom-control-label" for="sonataYes">Yes</label>
@@ -397,14 +400,14 @@ datepicker: 1
         
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="accompanyingAdult">Name of Accompanying Adult</label>
+            <label for="accompanyingAdult">Name of Accompanying Adult*</label>
             <input type="text" class="form-control" id="accompanyingAdult" name="accompanyingAdult" placeholder="Name of Accompanying Adult" required>
             <div class="invalid-feedback">
                Please enter the name of the accompanying adult.
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            Request Student to be escorted by a Mentor?
+            Request Student to be escorted by a Mentor?*
             <div class="custom-control custom-radio">
               <input type="radio" class="custom-control-input" id="mentorYes" name="mentor" value="Yes" required>
               <label class="custom-control-label" for="mentorYes">Yes</label>
@@ -417,7 +420,7 @@ datepicker: 1
           </div>
         </div><!-- /form-row -->
       </div><!-- /form-group -->
-      
+      <p class="text-muted">* indicates required field</p>
       
       <button class="btn btn-primary" type="submit">Submit Registration</button>
     </form>

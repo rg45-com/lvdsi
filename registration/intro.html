@@ -21,14 +21,14 @@ datepicker: 1
         <h3 class="slogan text-left">Student Info</h3>
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="studentLast">Student Last Name</label>
+            <label for="studentLast">Student Last Name*</label>
             <input type="text" class="form-control" id="studentLast" name="studentLast" placeholder="Last name" required>
             <div class="invalid-feedback">
               Please provide the Student's Last name.
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="studentFirst">Student First Name</label>
+            <label for="studentFirst">Student First Name*</label>
             <input type="text" class="form-control" id="studentFirst" name="studentFirst" placeholder="First name" required>
             <div class="invalid-feedback">
                 Please provide the Student's First name.
@@ -38,15 +38,15 @@ datepicker: 1
         
         <div class="form-row">        
           <div class="col-md-6 mb-3">
-            <label for="dob">Date of Birth</label>
+            <label for="dob">Date of Birth*</label>
             <input type="text" class="form-control fieldset__input js__datepicker" id="dob" name="dob" placeholder="YYYY-MM-DD" required>
             <div class="invalid-feedback">
               Please enter Student's valid date of birth.
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="gradeLevel">Grade in School 2017-18:</label>
-            <select class="custom-select" id="gradeLevel" name="gradeLevel">
+            <label for="gradeLevel">Grade in School 2017-18*</label>
+            <select class="custom-select" id="gradeLevel" name="gradeLevel" required>
               <option value="">Please select a grade</option>
               <option value="Pre-K">Pre-K</option>
               <option value="Kinder">Kinder</option>
@@ -72,7 +72,7 @@ datepicker: 1
         
         <div class="form-row">        
           <div class="col-md-6 mb-3">
-            <label for="tShirt1">T-Shirt Size:</label>
+            <label for="tShirt1">T-Shirt Size*</label>
             <select class="custom-select" id="tShirt1" name="tShirt1" required>
               {% include form-dropdown-tshirt.html %}
             </select>
@@ -81,24 +81,25 @@ datepicker: 1
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="tShirt2">Extra T-Shirt (optional):</label>
-            <select class="custom-select" id="tShirt2" name="tShirt2">
+            <label for="tShirt2">Extra T-Shirt*</label>
+            <select class="custom-select" id="tShirt2" name="tShirt2" required>
               {% include form-dropdown-tshirt.html %}
+              <option value="No_Extra_Shirt">No Extra Shirt</option>
             </select>
             <div class="invalid-feedback">
-               Please select a T-Shirt size.
+               Please select an extra T-Shirt size, or choose "No Extra Shirt".
             </div>
           </div>
         </div><!-- /form-row -->
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="enrichment">Extra Paid Enrichment Class (optional):</label>
+            <label for="enrichment">Extra Paid Enrichment Class (optional)</label>
             <select class="custom-select" id="enrichment" name="enrichment">
               {% include form-dropdown-enrichment.html %}
             </select>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="accompanyingAdult">Name of Accompanying Adult:</label>
+            <label for="accompanyingAdult">Name of Accompanying Adult*</label>
             <input type="text" class="form-control" id="accompanyingAdult" name="accompanyingAdult" placeholder="Name of Accompanying Adult" required>
             <div class="invalid-feedback">
                Please enter the name of the accompanying adult.
@@ -107,9 +108,11 @@ datepicker: 1
         </div><!-- /form-row -->
         
       </div><!-- /form-group -->
-            
+      <p class="text-muted">* indicates required field</p>
+      
       <button class="btn btn-primary" type="submit">Submit Registration</button>
     </form>
+    
     
     {% include form-validation.html %}
     

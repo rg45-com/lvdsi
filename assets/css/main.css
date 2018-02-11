@@ -26,6 +26,15 @@ a:visited {
 a:hover {
     color: #467096;
 }
+a.btn-blue  {
+  background: #6F93B4;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 2em;
+}
+.btn-blue:hover {
+    background-color: #467096;
+}
 a.btn-donate  {
   background: #035737;
   font-family: Arial;
@@ -59,6 +68,7 @@ a.btn-outline-secondary {
 	text-align:center;
 	color: #6F93B4;
 	font-size:1.3em;
+	margin: 20px 0px;
 }
 .dark_text {
 	color: #000000;
