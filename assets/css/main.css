@@ -388,3 +388,15 @@ a.btn-outline-secondary {
   color: #ffd496;
 }
 */
+hr.grad { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #202020, #6F93B4, #202020);
+  background-image: -moz-linear-gradient(left, #202020, #6F93B4, #202020);
+  background-image: -ms-linear-gradient(left, #202020, #6F93B4, #202020);
+  background-image: -o-linear-gradient(left, #202020, #6F93B4, #202020); 
+  margin: 30px 0px;
+}
+.fees h3, .fees h4 {
+  color: #6F93B4;
+}
