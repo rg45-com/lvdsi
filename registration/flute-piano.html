@@ -40,15 +40,15 @@ nav_item: registration
         
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="studentEmail">Student Email*</label>
-            <input type="text" class="form-control" id="studentEmail" name="studentEmail" placeholder="Student Email" required>
+            <label for="studentEmail">Student Email</label>
+            <input type="text" class="form-control" id="studentEmail" name="studentEmail" placeholder="Student Email">
             <div class="invalid-feedback">
               Please provide the Student's email address.
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="studentCell">Student Cell Phone*</label>
-            <input type="tel" class="form-control" id="studentCell" name="studentCell" placeholder="Student Cell Phone" required>
+            <label for="studentCell">Student Cell Phone</label>
+            <input type="tel" class="form-control" id="studentCell" name="studentCell" placeholder="Student Cell Phone">
             <div class="invalid-feedback">
                 Please provide the student's phone number.
               </div>
@@ -133,9 +133,10 @@ nav_item: registration
             </div>
           </div>
           <div class="col-md-6 mb-3">
-            <label for="fluteOwned">Flute Students - Do you own</label>
-            <select class="custom-select" id="fluteOwned" name="fluteOwned">
-              <option value="">Do you own?</option>
+            <label for="fluteOwned">Flute Students, select all that you own<br/>
+              <span class="small">hold (ctrl) on Windows, or (cmd) on Mac</span></label>
+            <select class="custom-select" multiple id="fluteOwned" name="fluteOwned" style="height:110px;">
+              <option value="None">-- None --</option>
               <option value="C_Flute">C flute only</option>
               <option value="Piccolo">Piccolo</option>
               <option value="Alto Flute">Alto Flute</option>
