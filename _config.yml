@@ -26,6 +26,8 @@ flute_reg_url: "/registration/flute-piano.html"
 piano_reg_url: "/registration/flute-piano.html"
 intro_reg_url: "/registration/intro.html"
 donate_url: "/cart.html#!/Donations/c/12752637/offset=0&sort=normal"
+year: "2019"
+next_year: "2020"
 
 # Build settings
 markdown: kramdown

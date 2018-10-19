@@ -1,20 +1,18 @@
 ---
 layout: page
-title: 2018 LVDSI Music Workshop Fees
+title: LVDSI Music Workshop Fees
 page_name: location
 nav_item: about
 ---
 <div class="container">
   <div class="slogan"> 
-    <h1>{{ page.title }}</h1>
+    <h1>{{ site.year }} {{ page.title }}</h1>
   </div>
   <div class="fees">
     <h3>Intro to Music</h3>
     <ul class="list-unstyled">
-      <li>Tuition $75</li>
-      <li>Registration fee if paid by 4/1/18 will be $25 </li>
-      <li>Registration fee if paid between 4/2/18 & 5/15/18 will be $50</li>
-      <li>Registration fee if paid between 5/16/18 & 7/15/18 will be $75</li>
+      <li>Tuition $50</li>
+      {% include registration_li.html %}
     </ul>
     
     <p>Our Intro to Music Camp is a half-day camp for children ages 3-6 who have either not yet begun formal music study or have only been playing a short while. Children attend each day from 9am-12noon and receive a General Music Class, a Carnival of the Animals (Introduction to the Instruments) Class, and a Vocal Explorations Class. We do limit each class to 8 students.</p>
@@ -60,7 +58,6 @@ nav_item: about
       <il>Registration fee if paid by 4/1/18 will be $50</il>
       <li>Registration fee if paid between 4/2/18 & 5/15/18 will be $75</li>
       <li>Registration fee if paid between 5/16/18 & 7/15/18 will be $100</li>
-      <li>Sibling Discount does not apply to Intro to Music</li>
       </ul>
     
     <hr class="grad">
