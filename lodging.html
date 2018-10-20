@@ -1,0 +1,34 @@
+---
+layout: page
+title: Student Lodging
+page_name: lodging
+nav_item: students
+---
+{% include hotel.html %}
+<div class="container">
+  <div class="slogan"> 
+    <h1>Student Lodging</h1>
+  </div>
+  
+  <p class="lead text-center">Let us know if you'd like to be paired with a room mate or desire to share a room for the hotel stay prior to booking -- we can help facilitate this.</p>
+  
+  <div class="fees">
+  <h3>Student Homestays</h3>
+  <p>LVDSI offers limited homestays for our out of town students. Requests are to be made as soon as registration is complete and will be handled on a first-come, first-served basis.</p>
+  
+  
+  <hr class="grad">
+     
+  <h3>Hotel Accommodations</h3>
+    <p>We have obtained a group rate for the Residence Inn directly across the parking lot from the location of the {{ site.year }} institute.  The hotel is less than a 5 minute walk away.</p>
+    <p>Please book your lodging directly with the hotel.<br/>
+       {{ hotel_location }}
+    </p>
+    
+    Rates:
+    <ul class="list-unstyled">
+      {{ hotel_rates }}
+    </ul>
+    <hr class="grad">
+  
+  </div>

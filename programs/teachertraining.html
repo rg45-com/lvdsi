@@ -4,12 +4,62 @@ title: Suzuki Teacher Training
 page_name: teaachertraining
 nav_item: teachers
 ---
+{% include hotel.html %}
 <div class="container">
   <div class="slogan"> 
     <h1>{{ page.title }}</h1>
   </div>
-  <p class="lead">LVDSI will not be offering Teacher Training in 2018.</p>
-      <p>As we are a 3-day workshop vs. a 5-day institute, there are not enough required Suzuki class hours for trainees to observe.</p>
-      
-      <p>The 2019 LVDSI Institute will be a full, 5-day institute with teacher training offered in both flute and piano as well as ECC. Specific books for Suzuki Registrations will be announced by October 2018.</p>
+  <p class="lead">The {{ site.year }} Las Vegas Desert Suzuki Institute will be a full, 5-day institute with teacher training offered in both flute and ECC.</p>
+    
+  <div class="table-responsive dark_text">
+    <table class="table table-bordered table-striped table-light">
+      <thead>
+        <tr>
+          <th colspan="2">Teacher Training Schedule</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Every Child Can!</th>
+          <td>Friday, July 5</td>
+        </tr>
+        <tr>
+          <th scope="row">Flute Book 1</th>
+          <td>Saturday, July 6 through Friday, July 12</td>
+        </tr>
+        <tr>
+          <th scope="row">Flute Book 2</th>
+          <td>Monday, July 8 through Friday, July 12</td>
+        </tr>
+      </tbody>
+    </table>
+  </div><!-- /table-responsive -->
+
+  <hr class="grad">
+   
+  <div class="fees"> 
+    <h3>Teacher Training Fees</h3>
+    <ul class="list-unstyled">
+      <li>Every Child Can! - $70</li>
+      <li>Flute Book 1 - $700</li>
+      <li>Flute Book 2 - $350</li>
+      <li>Flute Book 1 &amp; ECC - $805</li>
+      <li><small><em>* non-refundable deposit of $50 required</em></small></li>
+    </ul>
+    
+    <hr class="grad">
+     
+    <h3>Teacher Lodging Accommodations</h3>
+    <p>We have obtained a group rate for the Residence Inn directly across the parking lot from the location of the {{ site.year }} institute.  The hotel is less than a 5 minute walk away.</p>
+    <p>Please book your lodging directly with the hotel.<br/>
+       {{ hotel_location }}
+    </p>
+    
+    Rates:
+    <ul class="list-unstyled">
+      {{ hotel_rates }}
+    </ul>
+    <hr class="grad">
+  
+  </div>
 </div>

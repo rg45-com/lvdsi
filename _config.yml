@@ -16,7 +16,7 @@
 title: Las Vegas Suzuki Music
 email: lvdesertsuzuki@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Las Vegas Suzuki music workshop. We welcome all students of Flute, Piano, Violin and Viola as well as teachers seeking to obtain Suzuki book registration.
+  Las Vegas Suzuki music institute. We welcome all students of Flute, Piano, Violin and Viola as well as teachers seeking to obtain Suzuki book registration.
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.lvdesertsuzuki.com" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -24,10 +24,30 @@ url: "http://www.lvdesertsuzuki.com" # the base hostname & protocol for your sit
 google_analytics: "UA-113941522-1"
 flute_reg_url: "/registration/flute-piano.html"
 piano_reg_url: "/registration/flute-piano.html"
+violin_reg_url: "#"
 intro_reg_url: "/registration/intro.html"
+bg_fv_reg_url: "#"
 donate_url: "/cart.html#!/Donations/c/12752637/offset=0&sort=normal"
 year: "2019"
 next_year: "2020"
+
+# Tuition rates
+tui_intro: 50
+tui_beg_flute_violin: 75
+tui_flute_books1_2: 300
+tui_flute_books3_4: 395
+tui_flute_adv: 485
+tui_piano_books1_2: 300
+tui_piano_books3_4: 395
+tui_violin_books1_2: 300
+tui_violin_books3_4: 395
+tui_enrichment_add: 70 
+
+# Registration fees
+reg_1: 75
+reg_2: 85
+reg_3: 95
+reg_sibling_discount: 15
 
 # Build settings
 markdown: kramdown

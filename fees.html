@@ -1,19 +1,31 @@
 ---
 layout: page
-title: LVDSI Music Workshop Fees
+title: LVDSI Student Fees
 page_name: location
-nav_item: about
+nav_item: students
 ---
+{% include registration_li.html %}
 <div class="container">
   <div class="slogan"> 
     <h1>{{ site.year }} {{ page.title }}</h1>
   </div>
   <div class="fees">
-    <h3>Intro to Music</h3>
+    
+    <h3>Registration Fees</h3>
+    
+    <p>Registration fees are <strong>non-refundable</strong> and are in addition to the Tuition fees listed below.  They apply to Intro to Music, Beginning Flute &amp; Piano, and the Flute, Piano and Violin programs.</p>
+    
     <ul class="list-unstyled">
-      <li>Tuition $50</li>
-      {% include registration_li.html %}
+      {{ reg_long }}
     </ul>
+    
+    
+    <hr class="grad">
+    
+    <h3>Intro to Music</h3>
+      <p>Tuition ${{ site.tui_intro }}<br/>
+        <small><em>* plus registration fee</em></small>
+      </p>
     
     <p>Our Intro to Music Camp is a half-day camp for children ages 3-6 who have either not yet begun formal music study or have only been playing a short while. Children attend each day from 9am-12noon and receive a General Music Class, a Carnival of the Animals (Introduction to the Instruments) Class, and a Vocal Explorations Class. We do limit each class to 8 students.</p>
      
@@ -24,13 +36,21 @@ nav_item: about
     
     <hr class="grad">
     
+    <h3>Beginning Flute &amp; Violin</h3>
+    <p>Tuition ${{ site.tui_beg_flute_violin }}<br/>
+        <small><em>* plus registration fee</em></small>
+    </p>
+    <p>Additional info coming soon</p>
+    
+    <hr class="grad">
+    
     <h3>Flute Program</h3>
-    <ul class="list-unstyled">
-      <li>Tuition $350</li>
-      <li>Registration fee if paid by 4/1/18 will be $50</li>
-      <li>Registration fee if paid between 4/2/18 & 5/15/18 will be $75</li>
-      <li>Registration fee if paid between 5/16/18 & 7/15/18 will be $100</li>
-    </ul>
+    <p>Tuition --<br/>
+      Books 1 &amp; 2: ${{ site.tui_flute_books1_2 }}<br/>
+      Books 3 &amp; 4: ${{ site.tui_flute_books3_4 }}<br/>
+      Advance Flute Track: ${{ site.tui_flute_adv }}<br/>
+        <small><em>* plus registration fee</em></small>
+    </p>
     
     <p>All flute students will receive a daily Master Class, Technique Class, Repertoire Class, Flute Ensemble (placed by level), Performance Workshop and an Enrichment Class of their choice. Flutists who own a piccolo, alto or bass flute are encouraged to bring them to LVDSI for both Technique and Ensemble classes.</p>
     <p>All Flute Ensembles and Repertoire Classes will be performing on the Thursday Evening Final Concert. Individual parts for all ensembles will be assigned and emailed upon completed registration.</p>
@@ -39,12 +59,11 @@ nav_item: about
     <hr class="grad">
     
     <h3>Piano Program</h3>
-    <ul class="list-unstyled">
-      <li>Tuition $350</li>
-      <li>Registration fee if paid by 4/1/18 will be $50</li>
-      <li>Registration fee if paid between 4/2/18 & 5/15/18 will be $75</li>
-      <li>Registration fee if paid between 5/16/18 & 7/15/18 will be $100</li>
-    </ul>
+    <p>Tuition --<br/>
+      Books 1 &amp; 2: ${{ site.tui_piano_books1_2 }}<br/>
+      Books 3 &amp; 4: ${{ site.tui_piano_books3_4 }}<br/>
+        <small><em>* plus registration fee</em></small>
+    </p>
     
     <p>The Piano Program is open to all Suzuki Piano students in Books 1-4, as well as non-Suzuki trained students with equivalent playing abilities. Students will attend a daily Master Class, Technique Class (Books 1&2) or Accompanying (Books 3+), Piano Ensemble, Performance Workshop, Repertoire Class and an Enrichment Class of their choice. All Ensemble Music will be assigned and emailed to students upon completed registration. The Ensembles and the Repertoire Classes will perform on the Thursday Evening Final Concert.</p>
     
@@ -52,23 +71,35 @@ nav_item: about
     
     <hr class="grad">
     
-    <h4>Sibling Discount</h4>
-    <ul class="list-unstyled">
-      <li>$320 ($30 off of Tuition)</li>
-      <il>Registration fee if paid by 4/1/18 will be $50</il>
-      <li>Registration fee if paid between 4/2/18 & 5/15/18 will be $75</li>
-      <li>Registration fee if paid between 5/16/18 & 7/15/18 will be $100</li>
-      </ul>
+    <h3>Violin Program</h3>
+    <p>Tuition --<br/>
+      Books 1 &amp; 2: ${{ site.tui_violin_books1_2 }}<br/>
+      Books 3 &amp; 4: ${{ site.tui_violin_books3_4 }}<br/>
+        <small><em>* plus registration fee</em></small>
+    </p>
     
+    <p>Additional info coming soon.</p>
     <hr class="grad">
+    
+    
+    <h4>Additional Enrichment Classes</h4>
+    <p>${{ site.tui_enrichment_add }} per class</p>
+    
+    <p>Flute, Piano and Violin programs include one enrichment class.  Additional enrichment classes may be added if desired.</p>
+    <hr class="grad">
+    
     
     <h4>Mentor Fee</h4>
     <p>Mentors $30.00 per child</p>
     
     <p>All children under the age of 12 are required to have an adult/older sibling in attendance at their classes. For those younger students who must attend by themselves LVDSI is pleased to offer mentors (older music students) who will take notes and accompany them to their classes.</p>
-    
     <hr class="grad">
     
+    
+    <h4>Sibling Discount</h4>
+    <p>Get $15 off registration for siblings with our Sibling Discount</p>  
+    <hr class="grad">
+  
     <h4>Sibling Enrichment Classes</h4>
     <p>$40 per class</p>
     
@@ -76,13 +107,23 @@ nav_item: about
     
     <hr class="grad">
     
+    <h4>Pizza & Movie Night</h4>
+    <ul class="list-unstyled">
+      <li>Tuesday, July 9</li>
+      <li>Price T.B.D.</li>
+    </ul>
+  
+
+
+    <hr class="grad">
+    
     <h4>Spaghetti Dinner</h4>
-    <ul>
+    <ul class="list-unstyled">
       <li>$15 per person ages 6 and over</li>
       <li>$8 per person under the age of 6</li>
     </ul>
     
-    <p>Any students or families who wish to eat a catered spaghetti dinner before the Final Concert on Thursday night may purchase a ticket no later than Tuesday afternoon, July 17, 2018. The dinner will include a pasta dish, salad, bread, and a dessert. Dinner will be served on site. Ticket prices are $15 per person, children under age 6 are $8.</p>
+    <p>Any students or families who wish to eat a catered spaghetti dinner before the Final Concert on Friday night may purchase a ticket no later than Tuesday afternoon, July 9. The dinner will include a pasta dish, salad, bread, and a dessert. Dinner will be served on site. Ticket prices are $15 per person, children under age 6 are $8.</p>
     
     <hr class="grad">
     
@@ -90,7 +131,7 @@ nav_item: about
     <p>$12 per T-Shirt</p>
     
     
-    <p><em>Any fees not paid by 7/15/18 will be assessed a $50 late fee</em></p>
+    <p><em>Any fees not paid by July 1 will be assessed a $50 late fee</em></p>
   </div>
 
 </div>
