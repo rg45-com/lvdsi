@@ -57,7 +57,7 @@ nav_item: registration
       </div>
       <div class="card-body ">
         <h3 class="card-title pricing-card-title">${{ site.tui_violin_books1_2 }} <small>to</small> ${{ site.tui_violin_books3_4 }} <small> Tuition + Registration fee</small></h3>
-        <a href="{{ site.violin_reg_url }}" class="btn btn-lg btn-block btn-outline-secondary">Coming Soon</a>
+        <a href="{{ site.violin_reg_url }}" class="btn btn-lg btn-block btn-outline-secondary disabled" >Coming Soon</a>
         <ul class="list-unstyled mt-3 mb-4">
           {{ reg_short }}
         </ul>
@@ -69,7 +69,7 @@ nav_item: registration
       </div>
       <div class="card-body ">
         <h3 class="card-title pricing-card-title">${{ site.tui_beg_flute_violin }} <small> Tuition + Registration fee</small></h3>
-        <a href="{{ site.bg_fv_reg_url }}" class="btn btn-lg btn-block btn-outline-secondary">Coming Soon</a>
+        <a href="{{ site.bg_fv_reg_url }}" class="btn btn-lg btn-block btn-outline-secondary disabled">Coming Soon</a>
         <ul class="list-unstyled mt-3 mb-4">
           {{ reg_short }}
         </ul>
@@ -96,7 +96,7 @@ nav_item: registration
         <h3 class="my-0 font-weight-normal">Sibling Discount</h3>
       </div>
       <div class="card-body">
-        <p class="card-title pricing-card-title">Take ${{ site.reg_sibling_discount }} off each sibling's registration!</p>
+        <h3 class="card-title pricing-card-title"><small>Take</small> ${{ site.reg_sibling_discount }} <small>off each sibling's registration!</small></h3>
       </div>
     </div><!-- end box -->
     <div class="card mb-4 box-shadow bg-dark">
